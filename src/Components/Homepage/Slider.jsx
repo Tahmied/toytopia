@@ -12,7 +12,7 @@ const SliderSection = () => {
         arrows: false,
         autoplay: true,
         pauseOnHover: true,
-        autoplaySpeed: 3000
+        autoplaySpeed: 1500
     };
     return (
 

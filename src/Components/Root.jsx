@@ -1,4 +1,5 @@
 import { Outlet, useNavigation } from "react-router";
+import Footer from "./Footer";
 import Header from "./Header";
 import Loader from "./Loading";
 
@@ -13,7 +14,7 @@ const Root = () => {
                     navigation.state === 'loading' ? <Loader></Loader> : <Outlet></Outlet>
                 }
             </div>
-            {/* footer will be here */}
+        <Footer></Footer>
         </>
     );
 };
