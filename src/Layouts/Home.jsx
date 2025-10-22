@@ -1,9 +1,14 @@
 import Hero from "../Components/Hero";
+import PopularToys from "../Components/PopularToys";
 
 
 const Home = () => {
     return (
-        <Hero></Hero>
+        <>
+            <Hero></Hero>
+            <PopularToys></PopularToys>
+        </>
+
     );
 };
 

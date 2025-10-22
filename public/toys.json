@@ -1,14 +1,14 @@
 [
     {
         "toyId": 1,
-        "toyName": "Lego Classic Bricks",
+        "toyName": "Rubik’s Cube 3x3",
         "sellerName": "Toys R Us Local",
         "sellerEmail": "contact@toysruslocal.com",
         "price": 49.99,
         "rating": 4.7,
         "availableQuantity": 75,
         "description": "A timeless set of colorful Lego bricks that encourages creativity and problem-solving. Kids can build anything they imagine, from houses to vehicles.",
-        "pictureURL": "https://cdn.pixabay.com/photo/2016/03/31/20/11/lego-1297582_1280.png",
+        "pictureURL": "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Puzzle_Game_Rubiks_Cube_1Pieces-Non_Brand-7f93a-411106.png",
         "subCategory": "Building Blocks"
     },
     {
