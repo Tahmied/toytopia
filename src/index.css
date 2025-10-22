@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 * {
     margin: 0;
     padding: 0;
@@ -146,8 +145,6 @@ ul {
     transform: scale(1.1);
 }
 
-
-/* Navbar Updates for Responsive Hamburger Menu */
 .nav-container {
     display: flex;
     align-items: center;
@@ -262,7 +259,48 @@ ul {
     width: 60%;
 }
 
-/* Responsive Navbar */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 800;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-family: inherit;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: 0.5s;
+}
+
+.btn:hover:before {
+    left: 100%;
+}
+
+
+.btn-playful {
+    background: linear-gradient(135deg, var(--primary-yellow), var(--primary-green));
+    color: var(--dark);
+}
+
+.btn-playful:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
 @media (max-width: 992px) {
     .nav-container {
         gap: 1.5rem;
@@ -307,5 +345,144 @@ ul {
 @media (min-width: 769px) {
     .mobile-menu {
         display: none;
+    }
+}
+
+@media(max-width:375px) {
+    .logo {
+        font-size: 1.4em;
+    }
+}
+
+/* hero section */
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    color: var(--white);
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+    background-size: cover;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hero-image-placeholder {
+    width: 100%;
+    max-width: 550px;
+    height: 400px;
+    background: linear-gradient(135deg, var(--primary-yellow), var(--primary-green));
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    font-weight: 800;
+    font-size: 1.5rem;
+    box-shadow: var(--shadow-hover);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image-placeholder:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(45deg,
+            transparent,
+            transparent 10px,
+            rgba(255, 255, 255, 0.1) 10px,
+            rgba(255, 255, 255, 0.1) 20px);
+    animation: shine 3s linear infinite;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media (max-width:920px) {
+    .hero h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width:768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:690px) {}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
     }
 }
