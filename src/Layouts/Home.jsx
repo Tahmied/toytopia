@@ -1,5 +1,6 @@
-import Hero from "../Components/Hero";
-import PopularToys from "../Components/PopularToys";
+import Hero from "../Components/Homepage/Hero";
+import PopularToys from "../Components/Homepage/PopularToys";
+import Why from "../Components/Homepage/Why";
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <>
             <Hero></Hero>
             <PopularToys></PopularToys>
+            <Why></Why>
         </>
 
     );

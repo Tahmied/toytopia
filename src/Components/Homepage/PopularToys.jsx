@@ -1,7 +1,7 @@
 
 const PopularToys = () => {
     return (
-        <section class="popular-toys">
+        <section class="popular-toys popular-toys-sec">
             <div class="container">
                 <h2 class="section-title">Popular Toys</h2>
                 <div class="toys-grid">
@@ -126,7 +126,7 @@ const PopularToys = () => {
                         </div>
                     </div>
                 </div>
-                <div class="view-more-container">
+                <div class="view-more-container popular-view-more">
                     <a href="#" class="btn btn-secondary">View All Toys</a>
                 </div>
             </div>
