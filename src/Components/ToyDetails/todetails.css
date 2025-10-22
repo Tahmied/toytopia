@@ -1,0 +1,318 @@
+/* app detail page */
+
+.app-details-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1300px;
+    margin: 2rem auto;
+    width: 80%;
+    gap: 2rem;
+    align-items: center;
+}
+
+.app-details-right {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.app-details-right button {
+    margin: 0;
+}
+
+.app-details-icon-img {
+    width: 350px;
+}
+
+.app-details-icon {
+    width: fit-content;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.app-name-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: capitalize;
+    color: #001931;
+}
+
+.app-developed-by {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #627382;
+}
+
+.company-developer {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    background: linear-gradient(125.04deg, #632EE3 5.68%, #9F62F2 88.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.app-details-states {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.downloads-states {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.app-install-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+    gap: 10px;
+    width: fit-content;
+    height: 52px;
+    background: #00D390;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.download-detail-tag {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #001931;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.download-detail-num {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #001931;
+}
+
+.app-details-below-hr {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.rating-section {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.ratings-section-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #001931;
+}
+
+.ratings-chart {
+    height: 100%;
+    width: 80%;
+    position: relative;
+    left: -30px;
+    padding-top: 1rem;
+}
+
+
+.description-heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #001931;
+}
+
+.description-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #627382;
+    margin-bottom: 2rem;
+}
+
+.app-details-description {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.description-heading {
+    margin-bottom: 1rem;
+}
+
+@media (max-width:948px) {
+    .app-details-icon-img {
+        width: auto;
+    }
+}
+
+@media (max-width:850px) {
+    .download-detail-num {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:768px) {
+    .app-details-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .app-details-icon-img {
+        width: 350px;
+    }
+
+    .app-install-btn {
+        margin: 1.5rem auto;
+    }
+
+    .app-details-states {
+        gap: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    .app-hero-description {
+        font-size: 18px;
+        width: 70%;
+    }
+}
+
+@media (max-width:425px) {
+    .app-details-icon {
+        width: 90%;
+    }
+}
+
+@media (max-width:370px) {
+    .app-details-icon-img {
+        width: auto;
+    }
+
+    .app-details-states {
+        flex-direction: column;
+    }
+
+    .app-name-title {
+        text-align: center;
+    }
+
+    .app-developed-by {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .app-details-line {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* 404 page */
+.app-not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem auto;
+}
+
+.app-not-found-img {
+    width: 30%;
+}
+
+.not-found-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.012em;
+    color: #001931;
+}
+
+.not-found-desc {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #627382;
+}
+
+.back-btn-not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    width: 150px;
+    height: 48px;
+    background: linear-gradient(125.04deg, #632EE3 5.68%, #9F62F2 88.38%);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+
+.back-btn-not-found:hover {
+    transform: translateY(-5px);
+}

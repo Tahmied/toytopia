@@ -506,6 +506,7 @@ body.no-scroll {
     color: #FFFFFF;
     cursor: pointer;
     transition: all 0.2s ease;
+    max-width: 200px;
 }
 
 .all-apps-btn:hover {
@@ -872,7 +873,6 @@ body.no-scroll {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: 1rem;
 }
 
 .toy-card:hover {
@@ -909,7 +909,7 @@ body.no-scroll {
 .toy-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
 }
 

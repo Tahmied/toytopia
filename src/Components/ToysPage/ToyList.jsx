@@ -6,12 +6,11 @@ const ToyList = () => {
     return (
         <section className="popular-toys popular-toys-sec all-toys-sec">
             <div className="container">
-                <h2 className="section-title">Popular Toys</h2>
+                <h2 className="section-title">All Toys</h2>
                 <div className="toys-grid">
                     {
                         toys.map(toy => {
-                            console.log(toy)
-                            return <Toycard key={toy.toyId} name={`${toy.toyName}`} price={toy.price} rating={toy.rating} stock={toy.availableQuantity} img={toy.pictureURL}></Toycard>
+                            return <Toycard path={toy.toyId} key={toy.toyId} name={`${toy.toyName}`} price={toy.price} rating={toy.rating} stock={toy.availableQuantity} img={toy.pictureURL}></Toycard>
                         })
                     }
                 </div>

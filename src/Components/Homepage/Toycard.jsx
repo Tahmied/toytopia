@@ -1,5 +1,6 @@
+import { Link } from "react-router";
 
-const Toycard = ({ name, rating, stock, price, img, link }) => {
+const Toycard = ({ name, rating, stock, price, img, path }) => {
     return (
         <div className="toy-card">
             <div className="toy-image">
@@ -24,7 +25,7 @@ const Toycard = ({ name, rating, stock, price, img, link }) => {
                 </div>
 
                 <div className="toy-actions">
-                    <button className="btn-view">View Details</button>
+                    <Link to={`/toy/${path}`}><button className="btn-view">View Details</button></Link>
                 </div>
             </div>
         </div>
