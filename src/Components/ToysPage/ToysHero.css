@@ -1,0 +1,46 @@
+.app-hero {
+    padding: 2rem;
+    margin: 2rem auto;
+}
+
+.app-hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.app-hero-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #001931;
+}
+
+.app-hero-description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #627382;
+}
+
+@media (max-width:550px) {
+    .app-hero-title {
+        font-size: 35px;
+    }
+}
+
+
+.all-toys-sec {
+    background-color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

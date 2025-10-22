@@ -1,28 +1,23 @@
 import { useLoaderData } from "react-router";
-import Buttons from "../Buttons";
-import Toycard from "./Toycard";
+import Toycard from "../Homepage/Toycard";
 
-const PopularToys = () => {
+const ToyList = () => {
     const toys = useLoaderData()
-    console.log(toys)
     return (
-        <section className="popular-toys popular-toys-sec">
+        <section className="popular-toys popular-toys-sec all-toys-sec">
             <div className="container">
                 <h2 className="section-title">Popular Toys</h2>
                 <div className="toys-grid">
                     {
-                        toys.slice(0,6).map(toy => {
+                        toys.map(toy => {
+                            console.log(toy)
                             return <Toycard key={toy.toyId} name={`${toy.toyName}`} price={toy.price} rating={toy.rating} stock={toy.availableQuantity} img={toy.pictureURL}></Toycard>
                         })
                     }
-
-                </div>
-                <div className="view-more-container popular-view-more">
-                    <Buttons text={`View All Toys`} link={'toys'}></Buttons>
                 </div>
             </div>
         </section>
     );
 };
 
-export default PopularToys;
+export default ToyList;

@@ -48,7 +48,7 @@ const Header = () => {
                     <div className='menu'>
                         <ul className="nav-list">
                             <NavLink className="nav-item" to='/'>Home</NavLink>
-                            <NavLink className="nav-item" to='/apps'>All Toys</NavLink>
+                            <NavLink className="nav-item" to='/toys'>All Toys</NavLink>
                             <NavLink className="nav-item" to='/Installation'>Profile</NavLink>
                         </ul>
                     </div>

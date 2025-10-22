@@ -7,7 +7,7 @@ const Hero = () => {
                 <div className="hero-left">
                     <p className="hero-big-text">Find Your Best Toys For Your Kids</p>
                     <p className="hero-description">We deliver best of fantastic hand picked age appropriate toys books and puzzles straight to your door.</p>
-                    <Buttons text={`View Our Toys`}></Buttons>
+                    <Buttons link={'toys'} text={`View Our Toys`}></Buttons>
                 </div>
                 <div className="hero-right">
                     <img src="/assets/hero-image.png" alt="" className="hero-right" />

@@ -24,7 +24,7 @@ const Besttoys = () => {
                         </div>
 
                     </div>
-                    <Buttons text={`View Our Toys`}></Buttons>
+                    <Buttons link={'toys'} text={`View Our Toys`}></Buttons>
                 </div>
             </div>
 
