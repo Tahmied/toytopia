@@ -1,5 +1,6 @@
 import { Outlet, useNavigation } from "react-router";
 import Header from "./Header";
+import Loader from "./Loading";
 
 
 const Root = () => {

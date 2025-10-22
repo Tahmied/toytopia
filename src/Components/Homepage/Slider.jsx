@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import VideoSection from "../Video";
-const Trending = () => {
+const SliderSection = () => {
     var settings = {
         dots: false,
         infinite: true,
@@ -45,4 +45,4 @@ const Trending = () => {
     );
 };
 
-export default Trending;
+export default SliderSection;
