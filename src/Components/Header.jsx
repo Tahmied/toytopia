@@ -41,8 +41,8 @@ const Header = () => {
                 <div className="header-container">
 
                     <div onClick={() => navigate('/')} className='logo'>
-                        {/* <img src="/assets/logo.png" alt="" className="logo-icon" /> */}
-                        <span className="logo-text">ToyTopia</span>
+                        <img src="/assets/logo.png" alt="" className="logo-icon" />
+                        {/* <span className="logo-text">ToyTopia</span> */}
                     </div>
 
                     <div className='menu'>
@@ -63,7 +63,7 @@ const Header = () => {
                 <div className="mobile-menu">
                     <div onClick={() => navigate('/')} className='logo'>
                         <img src="/assets/logo.png" alt="" className="logo-icon" />
-                        <span className="logo-text">HERO.IO</span>
+                        {/* <span className="logo-text">HERO.IO</span> */}
                     </div>
 
                     <label onChange={toggleMenu} className="hamburger">

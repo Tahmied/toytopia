@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -46,8 +46,8 @@ header {
 }
 
 .logo-icon {
-    width: 40px;
-    height: 40px;
+    width: auto;
+    height: 60px;
 }
 
 .logo-text {
@@ -128,7 +128,6 @@ header {
     color: #FFFFFF;
     cursor: pointer;
 }
-
 
 .hamburger {
     cursor: pointer;
@@ -269,6 +268,11 @@ body.no-scroll {
     }
 }
 
+@media (max-width:530px) {
+    header {
+        padding: 16px 20px;
+    }
+}
 
 @media (max-width :425px) {
     .mobile-menu-ui {
@@ -428,4 +432,85 @@ body.no-scroll {
     opacity: 0;
     transform: translateX(30px);
     transition: none;
+}
+
+/* hero section */
+
+.hero-container {
+    max-width: 1300px;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.hero-big-text {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'DM Sans';
+    line-height: 60px;
+}
+
+.all-apps-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+    background: linear-gradient(135deg, #8a94ff 0%, #7680fe 50%, #5c67e0 100%);
+    box-shadow: 0 4px 12px rgba(118, 128, 254, 0.3);
+    border-radius: 4px;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.all-apps-btn:hover {
+    transform: translateY(-4px);
+}
+
+@media (max-width:1024px) {
+    .hero-big-text {
+        font-size: 40px;
+        font-weight: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    .hero-container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .hero-left {
+        align-items: center;
+    }
+
+    .hero-big-text {
+        text-align: center;
+    }
+
+    .hero-description {
+        text-align: center;
+    }
+
 }

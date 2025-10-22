@@ -1,16 +1,19 @@
+import Buttons from "../Buttons";
 
 const Hero = () => {
     return (
-        <section className="hero">
+        <section className="hero-section">
             <div className="hero-container">
-                <div className="hero-content">
-                    <h1>Where Imagination Meets Play!</h1>
-                    <p>Discover magical toys from local sellers. Safe, educational, and fun for kids of all ages!</p>
-                    <a href="#" className="btn btn-playful">Explore Toys</a>
+                <div className="hero-left">
+                    <p className="hero-big-text">Find Your Best Toys For Your Kids</p>
+                    <p className="hero-description">We deliver best of fantastic hand picked age appropriate toys books and puzzles straight to your door.</p>
+                    <Buttons text={`View Our Toys`}></Buttons>
+                </div>
+                <div className="hero-right">
+                    <img src="/assets/hero-image.png" alt="" className="hero-right" />
                 </div>
             </div>
         </section>
-
     );
 };
 
