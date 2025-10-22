@@ -5,124 +5,220 @@ const PopularToys = () => {
             <div class="container">
                 <h2 class="section-title">Popular Toys</h2>
                 <div class="toys-grid">
-
                     <div class="toy-card">
                         <div class="toy-image">
-                            Building Blocks Set
+                            <img src="https://rokbucket.rokomari.io/ProductNew20190903/260X372/Puzzle_Game_Rubiks_Cube_1Pieces-Non_Brand-7f93a-411106.png" alt="Creative Building Blocks" />
                         </div>
-                        <div class="toy-info">
-                            <h3 class="toy-name">Creative Building Blocks</h3>
-                            <div class="toy-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
+
+                        <div class="toy-content">
+                            <div class="toy-header">
+                                <h3 class="toy-name">Creative Building Blocks</h3>
+                                <div class="toy-price">$24.99</div>
                             </div>
-                            <div class="toy-details">
-                                <span>Available: 12</span>
+
+                            <div class="toy-meta">
+                                <div class="rating-badge">
+                                    <span class="rating-value">4.5</span>
+                                    <span class="rating-max">/5</span>
+                                </div>
+                                <div class="stock-info">
+                                    <span class="stock-indicator"></span>
+                                    <span>15 in stock</span>
+                                </div>
                             </div>
-                            <div class="toy-price">$24.99</div>
+
+                            <div class="toy-actions">
+                                <button class="btn-view">View Details</button>
+                            </div>
                         </div>
                     </div>
-
                     <div class="toy-card">
                         <div class="toy-image">
-                            Educational Puzzle
+                            <img src="https://rokbucket.rokomari.io/ProductNew20190903/260X372/Puzzle_Game_Rubiks_Cube_1Pieces-Non_Brand-7f93a-411106.png" alt="Creative Building Blocks" />
                         </div>
-                        <div class="toy-info">
-                            <h3 class="toy-name">World Map Puzzle</h3>
-                            <div class="toy-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+
+                        <div class="toy-content">
+                            <div class="toy-header">
+                                <h3 class="toy-name">Creative Building Blocks</h3>
+                                <div class="toy-price">$24.99</div>
                             </div>
-                            <div class="toy-details">
-                                <span>Available: 8</span>
+
+                            <div class="toy-meta">
+                                <div class="rating-badge">
+                                    <span class="rating-value">4.5</span>
+                                    <span class="rating-max">/5</span>
+                                </div>
+                                <div class="stock-info">
+                                    <span class="stock-indicator"></span>
+                                    <span>15 in stock</span>
+                                </div>
                             </div>
-                            <div class="toy-price">$18.50</div>
+
+                            <div class="toy-actions">
+                                <button class="btn-view">View Details</button>
+                            </div>
                         </div>
                     </div>
-
                     <div class="toy-card">
                         <div class="toy-image">
-                            Plush Animal
+                            <img src="https://rokbucket.rokomari.io/ProductNew20190903/260X372/Puzzle_Game_Rubiks_Cube_1Pieces-Non_Brand-7f93a-411106.png" alt="Creative Building Blocks" />
                         </div>
-                        <div class="toy-info">
-                            <h3 class="toy-name">Cuddly Panda Bear</h3>
-                            <div class="toy-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+
+                        <div class="toy-content">
+                            <div class="toy-header">
+                                <h3 class="toy-name">Creative Building Blocks</h3>
+                                <div class="toy-price">$24.99</div>
                             </div>
-                            <div class="toy-details">
-                                <span>Available: 15</span>
+
+                            <div class="toy-meta">
+                                <div class="rating-badge">
+                                    <span class="rating-value">4.5</span>
+                                    <span class="rating-max">/5</span>
+                                </div>
+                                <div class="stock-info">
+                                    <span class="stock-indicator"></span>
+                                    <span>15 in stock</span>
+                                </div>
                             </div>
-                            <div class="toy-price">$12.99</div>
+
+                            <div class="toy-actions">
+                                <button class="btn-view">View Details</button>
+                            </div>
                         </div>
                     </div>
-
                     <div class="toy-card">
                         <div class="toy-image">
-                            Science Kit
+                            <img src="https://rokbucket.rokomari.io/ProductNew20190903/260X372/Puzzle_Game_Rubiks_Cube_1Pieces-Non_Brand-7f93a-411106.png" alt="Creative Building Blocks" />
                         </div>
-                        <div class="toy-info">
-                            <h3 class="toy-name">Junior Science Lab</h3>
-                            <div class="toy-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
+
+                        <div class="toy-content">
+                            <div class="toy-header">
+                                <h3 class="toy-name">Creative Building Blocks</h3>
+                                <div class="toy-price">$24.99</div>
                             </div>
-                            <div class="toy-details">
-                                <span>Available: 5</span>
+
+                            <div class="toy-meta">
+                                <div class="rating-badge">
+                                    <span class="rating-value">4.5</span>
+                                    <span class="rating-max">/5</span>
+                                </div>
+                                <div class="stock-info">
+                                    <span class="stock-indicator"></span>
+                                    <span>15 in stock</span>
+                                </div>
                             </div>
-                            <div class="toy-price">$32.99</div>
+
+                            <div class="toy-actions">
+                                <button class="btn-view">View Details</button>
+                            </div>
                         </div>
                     </div>
-
                     <div class="toy-card">
                         <div class="toy-image">
-                            Art Supplies
+                            <img src="https://rokbucket.rokomari.io/ProductNew20190903/260X372/Puzzle_Game_Rubiks_Cube_1Pieces-Non_Brand-7f93a-411106.png" alt="Creative Building Blocks" />
                         </div>
-                        <div class="toy-info">
-                            <h3 class="toy-name">Creative Art Set</h3>
-                            <div class="toy-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+
+                        <div class="toy-content">
+                            <div class="toy-header">
+                                <h3 class="toy-name">Creative Building Blocks</h3>
+                                <div class="toy-price">$24.99</div>
                             </div>
-                            <div class="toy-details">
-                                <span>Available: 10</span>
+
+                            <div class="toy-meta">
+                                <div class="rating-badge">
+                                    <span class="rating-value">4.5</span>
+                                    <span class="rating-max">/5</span>
+                                </div>
+                                <div class="stock-info">
+                                    <span class="stock-indicator"></span>
+                                    <span>15 in stock</span>
+                                </div>
                             </div>
-                            <div class="toy-price">$19.99</div>
+
+                            <div class="toy-actions">
+                                <button class="btn-view">View Details</button>
+                            </div>
                         </div>
                     </div>
-
                     <div class="toy-card">
                         <div class="toy-image">
-                            Wooden Train
+                            <img src="https://rokbucket.rokomari.io/ProductNew20190903/260X372/Puzzle_Game_Rubiks_Cube_1Pieces-Non_Brand-7f93a-411106.png" alt="Creative Building Blocks" />
                         </div>
-                        <div class="toy-info">
-                            <h3 class="toy-name">Wooden Railway Set</h3>
-                            <div class="toy-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+
+                        <div class="toy-content">
+                            <div class="toy-header">
+                                <h3 class="toy-name">Creative Building Blocks</h3>
+                                <div class="toy-price">$24.99</div>
                             </div>
-                            <div class="toy-details">
-                                <span>Available: 7</span>
+
+                            <div class="toy-meta">
+                                <div class="rating-badge">
+                                    <span class="rating-value">4.5</span>
+                                    <span class="rating-max">/5</span>
+                                </div>
+                                <div class="stock-info">
+                                    <span class="stock-indicator"></span>
+                                    <span>15 in stock</span>
+                                </div>
                             </div>
-                            <div class="toy-price">$45.99</div>
+
+                            <div class="toy-actions">
+                                <button class="btn-view">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="toy-card">
+                        <div class="toy-image">
+                            <img src="https://rokbucket.rokomari.io/ProductNew20190903/260X372/Puzzle_Game_Rubiks_Cube_1Pieces-Non_Brand-7f93a-411106.png" alt="Creative Building Blocks" />
+                        </div>
+
+                        <div class="toy-content">
+                            <div class="toy-header">
+                                <h3 class="toy-name">Creative Building Blocks</h3>
+                                <div class="toy-price">$24.99</div>
+                            </div>
+
+                            <div class="toy-meta">
+                                <div class="rating-badge">
+                                    <span class="rating-value">4.5</span>
+                                    <span class="rating-max">/5</span>
+                                </div>
+                                <div class="stock-info">
+                                    <span class="stock-indicator"></span>
+                                    <span>15 in stock</span>
+                                </div>
+                            </div>
+
+                            <div class="toy-actions">
+                                <button class="btn-view">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="toy-card">
+                        <div class="toy-image">
+                            <img src="https://rokbucket.rokomari.io/ProductNew20190903/260X372/Puzzle_Game_Rubiks_Cube_1Pieces-Non_Brand-7f93a-411106.png" alt="Creative Building Blocks" />
+                        </div>
+
+                        <div class="toy-content">
+                            <div class="toy-header">
+                                <h3 class="toy-name">Creative Building Blocks</h3>
+                                <div class="toy-price">$24.99</div>
+                            </div>
+
+                            <div class="toy-meta">
+                                <div class="rating-badge">
+                                    <span class="rating-value">4.5</span>
+                                    <span class="rating-max">/5</span>
+                                </div>
+                                <div class="stock-info">
+                                    <span class="stock-indicator"></span>
+                                    <span>15 in stock</span>
+                                </div>
+                            </div>
+
+                            <div class="toy-actions">
+                                <button class="btn-view">View Details</button>
+                            </div>
                         </div>
                     </div>
                 </div>
