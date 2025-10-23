@@ -5,7 +5,6 @@ import './Profile.css';
 
 const MyProfile = () => {
     const { user, isLoggedIn } = useContext(AuthContext)
-    console.log(user)
     return (
         <div className="profile-container">
             <div className="profile-header">

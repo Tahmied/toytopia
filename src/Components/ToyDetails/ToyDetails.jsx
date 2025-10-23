@@ -12,7 +12,6 @@ const ToyDetails = () => {
     const appId = useParams()
     const allApps = useLoaderData()
     let appToShow = findAppById(allApps, appId.toyid)
-    console.log(appToShow)
     if (!appToShow) {
         return <ToyNotFound></ToyNotFound>
     }

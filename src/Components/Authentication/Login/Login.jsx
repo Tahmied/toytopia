@@ -16,8 +16,7 @@ const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
     const [loading, setLoading] = useState(false)
 
-    const { user, login } = useContext(AuthContext)
-    console.log(user)
+    const { login } = useContext(AuthContext)
 
     function handleGoogleLogin() {
         setLoading(true)
@@ -35,11 +34,11 @@ const Login = () => {
                     navigate('/')
                 })
             })
-            .catch((err) => {
+            .catch(() => {
                 Swal.fire({
-                    title: 'Login Successfull',
-                    text: err,
-                    icon: 'success',
+                    title: 'Login Faild',
+                    text: 'Account is not registered',
+                    icon: 'error',
                     showConfirmButton: 'false'
                 });
                 setLoading(false)
@@ -63,10 +62,10 @@ const Login = () => {
                     navigate('/')
                 })
             })
-            .catch((err) => {
+            .catch(() => {
                 Swal.fire({
-                    title: 'Login Successfull',
-                    text: err,
+                    title: 'Login Faild',
+                    text: 'Account is not registered',
                     icon: 'error',
                     showConfirmButton: 'false'
                 });
@@ -77,6 +76,12 @@ const Login = () => {
     const handleTogglePassword = () => {
         setShowPassword(!showPassword);
     };
+
+    const saveEmail = (email)=>{
+        setEmail(email)
+        localStorage.setItem('savedEmail', email)
+    }
+
     if (loading) {
         return <Loader></Loader>
     }
@@ -117,7 +122,7 @@ const Login = () => {
                                         placeholder="name@email.com"
                                         required
                                         value={email}
-                                        onChange={(e) => setEmail(e.target.value)}
+                                        onChange={(e) => saveEmail(e.target.value)}
                                     />
                                 </div>
                             </div>

@@ -11,7 +11,7 @@ const googleAuthProvider = new GoogleAuthProvider()
 
 const Registration = () => {
 
-    const { user, login } = useContext(AuthContext)
+    const { login } = useContext(AuthContext)
 
     const [formData, setFormData] = useState({
         fullName: '',
@@ -63,7 +63,7 @@ const Registration = () => {
             .catch((err) => {
                 setLoading(false)
                 Swal.fire({
-                    title: 'Login Successfull',
+                    title: 'Registration Failed',
                     text: err,
                     icon: 'error',
                     showConfirmButton: 'false'
@@ -91,7 +91,7 @@ const Registration = () => {
             .catch((err) => {
                 setLoading(false)
                 Swal.fire({
-                    title: 'Login Successfull',
+                    title: 'Registration Failed',
                     text: err,
                     icon: 'error',
                     showConfirmButton: 'false'

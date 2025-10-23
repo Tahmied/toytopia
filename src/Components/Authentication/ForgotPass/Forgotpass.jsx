@@ -1,10 +1,52 @@
-import { Link } from 'react-router';
+import { sendPasswordResetEmail } from 'firebase/auth';
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router';
+import Swal from 'sweetalert2';
+import { auth } from '../../Firebase.init';
+import Loader from '../../Loading';
 import '../Login/login.css';
 
 const Forgotpass = () => {
-    
+    const [loading, setLoading] = useState(false)
+    const [savedEmail, setSavedEmail] = useState('')
+    const navigate = useNavigate()
+
+    const foundEmail = localStorage.getItem('savedEmail')
+    if (foundEmail !== undefined) {
+        setSavedEmail(foundEmail)
+    } else {
+        return null
+    }
+    console.log(foundEmail)
     function handleForgotpass(e) {
-        console.log(e.target)
+        e.preventDefault()
+        setLoading(true)
+        sendPasswordResetEmail(auth, e.target.email.value)
+            .then(() => {
+                setLoading(false)
+                Swal.fire({
+                    title: 'Password Reset Email Sent',
+                    text: 'Make sure to check your inbox and spam folder',
+                    icon: 'success',
+                    showConfirmButton: false,
+                    timer: 1000
+                }).then(() => {
+                    navigate('/')
+                })
+            })
+            .catch((err) => {
+                console.log(err)
+                setLoading(false)
+                Swal.fire({
+                    title: 'Failed to send email',
+                    text: err,
+                    icon: 'error'
+                })
+            })
+    }
+
+    if (loading) {
+        return <Loader></Loader>
     }
 
     return (
@@ -41,6 +83,7 @@ const Forgotpass = () => {
                                         className="form-control"
                                         placeholder="name@email.com"
                                         required
+                                        value={savedEmail ? savedEmail : null}
                                     />
                                 </div>
                             </div>

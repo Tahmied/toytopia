@@ -22,19 +22,21 @@ const EditProfile = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData.displayName, formData.photo)
         updateProfile(user, {
             displayName: formData.displayName,
             photoURL: formData.photo,
         })
-        .then((res)=>{
-            console.log(res)
+        .then(()=>{
             Swal.fire({
                 title: 'Profile Updated Successfully',
                 icon: 'success'
             })
         }).catch((err)=>{
-            console.log(err)
+            Swal.fire({
+                title: 'Couldn\'t update your profile',
+                icon: 'error',
+                text: err
+            })
         })
     };
 
