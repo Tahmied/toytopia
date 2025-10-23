@@ -56,7 +56,7 @@ const Header = () => {
                             <NavLink className="nav-item" to='/'>Home</NavLink>
                             <NavLink className="nav-item" to='/toys'>All Toys</NavLink>
                             {
-                                isLoggedIn ? <NavLink className="nav-item" to='/Installation'>Profile</NavLink> : ''
+                                isLoggedIn ? <NavLink className="nav-item" to='/profile'>Profile</NavLink> : ''
                             }
                         </ul>
                     </div>

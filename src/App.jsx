@@ -3,6 +3,7 @@ import './App.css'
 import Login from './Components/Authentication/Login/Login'
 import Registration from './Components/Authentication/Registration/Registration'
 import Home from './Components/Homepage/Home'
+import MyProfile from './Components/Profile/MyProfile'
 import Root from './Components/Root'
 import ToyDetails from './Components/ToyDetails/ToyDetails'
 import Toys from './Components/ToysPage/Toys'
@@ -25,6 +26,9 @@ const router = createBrowserRouter([
       },
       {
         path: 'register', Component: Registration
+      },
+      {
+        path: 'profile', Component: MyProfile
       }
     ]
   }
