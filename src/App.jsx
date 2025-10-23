@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         path: 'toys', Component: Toys, loader: () => fetch('/toys.json')
       },
       {
-        path: 'toy/:toyid', Component: ToyDetails, loader: () => fetch('/toys.json')
+        path: 'toy/:toyid', element: <PrivateRoutes><ToyDetails></ToyDetails></PrivateRoutes> , loader: () => fetch('/toys.json')
       },
       {
         path: 'login', Component: Login

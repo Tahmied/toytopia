@@ -1,13 +1,13 @@
 import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, updateProfile } from 'firebase/auth';
 import { useContext, useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import Swal from 'sweetalert2';
 import { auth } from '../../Firebase.init';
+import Loader from '../../Loading.jsx';
 import { AuthContext } from '../AuthContext.jsx';
 import './registration.css';
 
 const googleAuthProvider = new GoogleAuthProvider()
-
 
 const Registration = () => {
 
@@ -20,7 +20,9 @@ const Registration = () => {
         terms: false
     });
 
+    const navigate = useNavigate()
     const [showPassword, setShowPassword] = useState(false);
+    const [loading, setLoading] = useState(false)
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -36,7 +38,7 @@ const Registration = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        setLoading(true)
         if (!formData.terms) {
             alert('Please agree to the Terms of Service and Privacy Policy');
             return;
@@ -47,34 +49,58 @@ const Registration = () => {
                     displayName: formData.fullName
                 })
                 login(res.user)
+                setLoading(false)
                 Swal.fire({
                     title: 'Registration Successfull',
-                    text: 'Your account has been registered!',
+                    text: 'Your account has been registered successfully',
                     icon: 'success',
-                    confirmButtonText: 'Cool'
+                    showConfirmButton: false,
+                    timer: 1000
+                }).then(() => {
+                    navigate('/')
                 })
-
+            })
+            .catch((err) => {
+                setLoading(false)
+                Swal.fire({
+                    title: 'Login Successfull',
+                    text: err,
+                    icon: 'error',
+                    showConfirmButton: 'false'
+                });
             })
     };
 
 
     function handleGoogleLogin() {
+        setLoading(true)
         signInWithPopup(auth, googleAuthProvider)
             .then((res) => {
                 login(res.user)
+                setLoading(false)
                 Swal.fire({
                     title: 'Registration Successfull',
-                    text: 'Your account has been registered!',
+                    text: 'Your account has been registered successfully',
                     icon: 'success',
-                    confirmButtonText: 'Cool'
-                });
+                    showConfirmButton: false,
+                    timer: 1000
+                }).then(() => {
+                    navigate('/')
+                })
             })
             .catch((err) => {
-                console.log(err)
+                setLoading(false)
+                Swal.fire({
+                    title: 'Login Successfull',
+                    text: err,
+                    icon: 'error',
+                    showConfirmButton: 'false'
+                });
             })
-        console.log(user)
     }
-
+    if (loading) {
+        return <Loader></Loader>
+    }
     return (
         <section className="registration-sec">
             <div className="register-container">
