@@ -160,6 +160,10 @@
     background-color: white;
 }
 
+.form-control::placeholder {
+    color: #666;
+}
+
 .password-toggle {
     position: absolute;
     right: 15px;

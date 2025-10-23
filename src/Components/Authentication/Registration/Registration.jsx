@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, updateProfile } from 'firebase/auth';
 import { useContext, useState } from 'react';
 import { Link } from 'react-router';
 import Swal from 'sweetalert2';
@@ -7,6 +7,7 @@ import { AuthContext } from '../AuthContext.jsx ';
 import './registration.css';
 
 const googleAuthProvider = new GoogleAuthProvider()
+
 
 const Registration = () => {
 
@@ -40,7 +41,20 @@ const Registration = () => {
             alert('Please agree to the Terms of Service and Privacy Policy');
             return;
         }
-        console.log('Registration data:', formData);
+        createUserWithEmailAndPassword(auth, formData.email, formData.password)
+            .then((res) => {
+                updateProfile(res.user, {
+                    displayName: formData.fullName
+                })
+                login(res.user)
+                Swal.fire({
+                    title: 'Registration Successfull',
+                    text: 'Your account has been registered!',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                })
+
+            })
     };
 
 
