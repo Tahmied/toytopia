@@ -199,7 +199,7 @@ header {
     top: 0;
     height: 100%;
     flex-direction: column-reverse;
-    z-index: 99999999;
+    z-index: 100;
 }
 
 .mobile-nav-list {
@@ -216,7 +216,7 @@ header {
 
 .cover-whole-body {
     display: none;
-    z-index: 1;
+    z-index: 90;
 }
 
 .hidden {
@@ -574,6 +574,29 @@ body.no-scroll {
 
 .dropdown-item:hover::before {
     height: 16px;
+}
+
+.mobile-actions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    scale: 0.8;
+}
+
+.mobile-header-actions {
+    z-index: 110;
+}
+
+.mobile-profile-nav {
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
+
+.mobile-profile-nav.fade-out {
+    opacity: 0;
+    pointer-events: none;
+    transition-delay: 0.1s;
 }
 
 /* hero section */

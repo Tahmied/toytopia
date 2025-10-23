@@ -44,6 +44,7 @@ const Header = () => {
         setisDropdownActive(!isDropdownActive)
     }
 
+    console.log(isLoggedIn)
     const navigate = useNavigate()
     return (
         <>
@@ -65,13 +66,13 @@ const Header = () => {
                     <div className="header-cta">
                         {
                             isLoggedIn ? <div className="header-actions">
-                            <div onClick={() => setDropdown()} className="profile-nav">
-                                <img src="/assets/profile.jpg" alt="" className="profile-pic" />
-                            </div>
-                            {
-                                isDropdownActive ? <HeaderDropdown name={user.displayName}></HeaderDropdown> : ''
-                            }
-                        </div> : <Buttons link={'login'} text={'Login'}></Buttons>
+                                <div onClick={() => setDropdown()} className="profile-nav">
+                                    <img src="/assets/profile.jpg" alt="" className="profile-pic" />
+                                </div>
+                                {
+                                    isDropdownActive ? <HeaderDropdown name={user.displayName}></HeaderDropdown> : ''
+                                }
+                            </div> : <Buttons link={'login'} text={'Login'}></Buttons>
                         }
                     </div>
                 </div>
@@ -80,13 +81,28 @@ const Header = () => {
                         <img src="/assets/logo.png" alt="" className="logo-icon" />
                     </div>
 
-                    <label onChange={toggleMenu} className="hamburger">
-                        <input type="checkbox" />
-                        <svg viewBox="0 0 32 32">
-                            <path className="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-                            <path className="line" d="M7 16 27 16"></path>
-                        </svg>
-                    </label>
+                    <div className="mobile-header-actions">
+                        <div className="mobile-actions-container">
+                            {
+                                isLoggedIn ? <div>
+                                    <div onClick={() => setDropdown()} className={`mobile-profile-nav ${isMenuOpen ? 'fade-out' : ''}`}>
+                                        <img src="/assets/profile.jpg" alt="" className="profile-pic" />
+                                    </div>
+                                    {
+                                        isDropdownActive ? <HeaderDropdown name={user.displayName}></HeaderDropdown> : ''
+                                    }</div> : <Buttons link={'login'} text={'Login'}></Buttons>
+                            }
+                            <label onChange={toggleMenu} className="hamburger">
+                                <input type="checkbox" />
+                                <svg viewBox="0 0 32 32">
+                                    <path className="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                                    <path className="line" d="M7 16 27 16"></path>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+
+
 
                 </div>
                 <div className={`cover-whole-body ${isMenuOpen ? '' : 'hidden'}`}></div>
