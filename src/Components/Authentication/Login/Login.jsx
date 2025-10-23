@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { useContext, useState } from 'react';
 import Swal from 'sweetalert2';
 import { auth } from '../../Firebase.init';
@@ -30,12 +30,24 @@ const Login = () => {
             .catch((err) => {
                 console.log(err)
             })
-        console.log(user)
     }
 
     const handleLogin = (e) => {
         e.preventDefault();
-        console.log('Login attempt with:', { email, password });
+        signInWithEmailAndPassword(auth, email, password)
+            .then((res) => {
+                console.log(res.user)
+                login(res.user)
+                Swal.fire({
+                    title: 'Login Successfull',
+                    text: 'You have been logged in properly',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                });
+            })
+            .catch((err)=>{
+                console.log(err)
+            })
     };
 
     const handleTogglePassword = () => {
