@@ -3,6 +3,7 @@ import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../Authentication/AuthContext';
+import Loader from '../Loading';
 import './Profile.css';
 
 const EditProfile = () => {
@@ -12,6 +13,7 @@ const EditProfile = () => {
         displayName: user.displayName,
         photo: user.photoURL
     });
+    const [isLoading, setIsLoading] = useState(false)
 
     const handleChange = (e) => {
         setFormData({
@@ -22,11 +24,13 @@ const EditProfile = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setIsLoading(true)
         updateProfile(user, {
             displayName: formData.displayName,
             photoURL: formData.photo,
         })
         .then(()=>{
+            setIsLoading(false)
             Swal.fire({
                 title: 'Profile Updated Successfully',
                 icon: 'success'
@@ -39,6 +43,10 @@ const EditProfile = () => {
             })
         })
     };
+
+    if(isLoading) {
+        return <Loader></Loader>
+    }
 
     return (
         <div className="profile-container">

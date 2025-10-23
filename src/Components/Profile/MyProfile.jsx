@@ -37,25 +37,6 @@ const MyProfile = () => {
                         <label>Email Address</label>
                         <div className="detail-value">{user.email}</div>
                     </div>
-
-                    <div className="detail-group">
-                        <label>Phone Number</label>
-                        <div className="detail-value">{user.providerData[0].phoneNumber || 'Not provided'}</div>
-                    </div>
-
-                    <div className="detail-group">
-                        <label>Signup Date</label>
-                        <div className="detail-value">
-                            {new Date(user.signupDate).toLocaleDateString()}
-                        </div>
-                    </div>
-
-                    <div className="detail-group">
-                        <label>Last Login</label>
-                        <div className="detail-value">
-                            {new Date(user.lastLogin).toLocaleDateString()}
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

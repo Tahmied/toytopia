@@ -115,11 +115,9 @@
     border-bottom: 1px solid var(--border-color);
 }
 
-/* Edit Form Styles */
 .edit-form {
     display: flex;
     flex-direction: column;
-    gap: 30px;
 }
 
 .form-section {
