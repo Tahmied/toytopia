@@ -210,6 +210,11 @@
     .app-details-states {
         gap: 10px;
     }
+
+    .app-details-right {
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media (max-width:600px) {
@@ -223,6 +228,7 @@
     .app-details-icon {
         width: 90%;
     }
+
 }
 
 @media (max-width:370px) {

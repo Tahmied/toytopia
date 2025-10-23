@@ -12,7 +12,7 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
             setUser(firebaseUser)
-            setIsLoggedIn(!!firebaseUser); 
+            setIsLoggedIn(firebaseUser ? true : false); 
             setLoading(false);
         });
 

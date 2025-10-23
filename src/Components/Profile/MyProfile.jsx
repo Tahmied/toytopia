@@ -4,7 +4,7 @@ import { AuthContext } from '../Authentication/AuthContext';
 import './Profile.css';
 
 const MyProfile = () => {
-    const { user, isLoggedIn } = useContext(AuthContext)
+    const { user } = useContext(AuthContext)
     return (
         <div className="profile-container">
             <div className="profile-header">

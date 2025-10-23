@@ -7,7 +7,7 @@ import './Profile.css';
 
 const EditProfile = () => {
     const navigate = useNavigate()
-    const { user, isLoggedIn } = useContext(AuthContext)
+    const { user } = useContext(AuthContext)
     const [formData, setFormData] = useState({
         displayName: user.displayName,
         photo: user.photoURL

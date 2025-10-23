@@ -37,7 +37,7 @@ const Login = () => {
             .catch(() => {
                 Swal.fire({
                     title: 'Login Faild',
-                    text: 'Account is not registered',
+                    text: 'Account is not registered or wrong email/pass',
                     icon: 'error',
                     showConfirmButton: 'false'
                 });
@@ -65,7 +65,7 @@ const Login = () => {
             .catch(() => {
                 Swal.fire({
                     title: 'Login Faild',
-                    text: 'Account is not registered',
+                    text: 'Account is not registered or wrong email/pass',
                     icon: 'error',
                     showConfirmButton: 'false'
                 });

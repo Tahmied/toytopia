@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-const Buttons = ({ link, text }) => {
+const Buttons = ({ link, text, onClick }) => {
   if (link) {
     return (
       <Link to={`/${link}`} className="all-apps-link">
@@ -8,7 +8,17 @@ const Buttons = ({ link, text }) => {
       </Link>
     );
   }
-  return <button className="all-apps-btn">{text}</button>;
+
+  return onClick ? (
+      <button onClick={onClick} className="all-apps-btn">
+        {text}
+      </button>
+    ) : (
+    <button className="all-apps-btn">{text}</button>
+  );
+
+
+
 };
 
 export default Buttons;
