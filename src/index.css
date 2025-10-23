@@ -454,6 +454,128 @@ body.no-scroll {
     transition: none;
 }
 
+.header-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.profile-nav {
+    cursor: pointer;
+    border: 3px solid #7680fe;
+    border-radius: 50%;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dropdown-menu {
+    display: block;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    min-width: 280px;
+    border: 1px solid #e1e8ed;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    right: 1px;
+}
+
+.dropdown-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 12px;
+    background: #f8f9ff;
+}
+
+.dropdown-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #7680fe;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.user-name {
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.user-email {
+    font-size: 14px;
+    color: #666;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background: #f0f0f0;
+    margin: 0;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+}
+
+.dropdown-item:hover {
+    background: #f8f9ff;
+    color: #7680fe;
+}
+
+.dropdown-item:active {
+    background: #7680fe;
+    color: white;
+}
+
+.logout-btn {
+    color: #e74c3c;
+}
+
+.logout-btn:hover {
+    background: #fff5f5;
+    color: #c0392b;
+}
+
+.dropdown-item::before {
+    content: "";
+    width: 4px;
+    height: 0;
+    background: #7680fe;
+    margin-right: 12px;
+    border-radius: 2px;
+    transition: height 0.2s ease;
+}
+
+.dropdown-item:hover::before {
+    height: 16px;
+}
+
 /* hero section */
 
 .hero-container {

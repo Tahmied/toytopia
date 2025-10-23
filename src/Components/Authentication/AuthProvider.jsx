@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { AuthContext } from './AuthContext.jsx ';
+import { AuthContext } from './AuthContext';
 
 
 const AuthProvider = ({ children }) => {
@@ -10,9 +10,9 @@ const AuthProvider = ({ children }) => {
         const storedUser = localStorage.getItem('user');
         if (storedUser) {
             setUser(JSON.parse(storedUser));
+            setIsLoggedIn(true)
         }
     }, []);
-
 
     const login = (userData) => {
         setUser(userData)

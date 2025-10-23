@@ -3,7 +3,7 @@ import { useContext, useState } from 'react';
 import { Link } from 'react-router';
 import Swal from 'sweetalert2';
 import { auth } from '../../Firebase.init';
-import { AuthContext } from '../AuthContext.jsx ';
+import { AuthContext } from '../AuthContext.jsx';
 import './registration.css';
 
 const googleAuthProvider = new GoogleAuthProvider()

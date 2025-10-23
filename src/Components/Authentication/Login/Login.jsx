@@ -2,9 +2,8 @@ import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 
 import { useContext, useState } from 'react';
 import Swal from 'sweetalert2';
 import { auth } from '../../Firebase.init';
-import { AuthContext } from '../AuthContext.jsx ';
+import { AuthContext } from '../AuthContext';
 import './login.css';
-
 const googleAuthProvider = new GoogleAuthProvider()
 
 

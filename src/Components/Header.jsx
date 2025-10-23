@@ -1,11 +1,12 @@
 import { useContext, useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router";
-import { AuthContext } from "./Authentication/AuthContext.jsx ";
+import { AuthContext } from "./Authentication/AuthContext.jsx";
 import Buttons from "./Buttons";
+import HeaderDropdown from "./HeaderDropdown";
 
 const Header = () => {
     const { user, isLoggedIn } = useContext(AuthContext)
-    console.log(user, isLoggedIn)
+    // console.log(user, isLoggedIn)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const toggleMenu = () => {
@@ -37,6 +38,11 @@ const Header = () => {
         };
     }, [isMenuOpen]);
 
+    const [isDropdownActive, setisDropdownActive] = useState(false)
+
+    function setDropdown() {
+        setisDropdownActive(!isDropdownActive)
+    }
 
     const navigate = useNavigate()
     return (
@@ -46,7 +52,6 @@ const Header = () => {
 
                     <div onClick={() => navigate('/')} className='logo'>
                         <img src="/assets/logo.png" alt="" className="logo-icon" />
-                        {/* <span className="logo-text">ToyTopia</span> */}
                     </div>
 
                     <div className='menu'>
@@ -58,13 +63,21 @@ const Header = () => {
                     </div>
 
                     <div className="header-cta">
-                        <Buttons link={'login'} text={'Login'}></Buttons>
+                        {
+                            isLoggedIn ? <div className="header-actions">
+                            <div onClick={() => setDropdown()} className="profile-nav">
+                                <img src="/assets/profile.jpg" alt="" className="profile-pic" />
+                            </div>
+                            {
+                                isDropdownActive ? <HeaderDropdown name={user.displayName}></HeaderDropdown> : ''
+                            }
+                        </div> : <Buttons link={'login'} text={'Login'}></Buttons>
+                        }
                     </div>
                 </div>
                 <div className="mobile-menu">
                     <div onClick={() => navigate('/')} className='logo'>
                         <img src="/assets/logo.png" alt="" className="logo-icon" />
-                        {/* <span className="logo-text">HERO.IO</span> */}
                     </div>
 
                     <label onChange={toggleMenu} className="hamburger">
