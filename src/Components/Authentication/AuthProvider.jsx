@@ -28,6 +28,7 @@ const AuthProvider = ({ children }) => {
         setUser(null);
         auth.signOut();
         setIsLoggedIn(false)
+        localStorage.clear()
     };
 
     if (loading) return <Loader></Loader>

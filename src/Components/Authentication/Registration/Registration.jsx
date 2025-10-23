@@ -17,7 +17,8 @@ const Registration = () => {
         fullName: '',
         email: '',
         password: '',
-        terms: false
+        terms: false,
+        photoURL : ''
     });
 
     const navigate = useNavigate()
@@ -46,7 +47,8 @@ const Registration = () => {
         createUserWithEmailAndPassword(auth, formData.email, formData.password)
             .then((res) => {
                 updateProfile(res.user, {
-                    displayName: formData.fullName
+                    displayName: formData.fullName,
+                    photoURL : formData.photoURL
                 })
                 login(res.user)
                 setLoading(false)
@@ -156,6 +158,26 @@ const Registration = () => {
                                     className="form-control"
                                     placeholder="name@email.com"
                                     value={formData.email}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </div>
+                        </div>
+
+
+                        <div className="form-group">
+                            <label className="form-label" htmlFor="photoURL">
+                                Photo URL
+                            </label>
+                            <div className="input-with-icon">
+                                <i className="fas fa-envelope input-icon"></i>
+                                <input
+                                    type="text"
+                                    id="photoURL"
+                                    name="photoURL"
+                                    className="form-control"
+                                    placeholder="yourphotourl.com"
+                                    value={formData.photoURL}
                                     onChange={handleChange}
                                     required
                                 />
