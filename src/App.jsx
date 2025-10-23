@@ -9,6 +9,7 @@ import MyProfile from './Components/Profile/MyProfile'
 import Root from './Components/Root'
 import ToyDetails from './Components/ToyDetails/ToyDetails'
 import Toys from './Components/ToysPage/Toys'
+import TriedToys from './Components/TriedToys/TriedToys'
 import PrivateRoutes from './Routes/PrivateRoutes'
 
 const router = createBrowserRouter([
@@ -38,6 +39,9 @@ const router = createBrowserRouter([
       },
       {
         path: 'forgot-password', Component : Forgotpass
+      },
+      {
+        path: 'tried-toys', element : <PrivateRoutes><TriedToys></TriedToys></PrivateRoutes> 
       }
     ]
   }

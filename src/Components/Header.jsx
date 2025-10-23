@@ -58,6 +58,9 @@ const Header = () => {
                             {
                                 isLoggedIn ? <NavLink className="nav-item" to='/profile'>Profile</NavLink> : ''
                             }
+                            {
+                                isLoggedIn ? <NavLink className="nav-item" to='/tried-toys'>Tried Toys</NavLink> : ''
+                            }
                         </ul>
                     </div>
 
