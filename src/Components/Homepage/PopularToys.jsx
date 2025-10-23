@@ -4,7 +4,6 @@ import Toycard from "./Toycard";
 
 const PopularToys = () => {
     const toys = useLoaderData()
-    console.log(toys)
     return (
         <section className="popular-toys popular-toys-sec">
             <div className="container">

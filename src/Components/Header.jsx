@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router";
+import { AuthContext } from "./Authentication/AuthContext.jsx ";
 import Buttons from "./Buttons";
 
 const Header = () => {
+    const { user, isLoggedIn } = useContext(AuthContext)
+    console.log(user, isLoggedIn)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const toggleMenu = () => {
