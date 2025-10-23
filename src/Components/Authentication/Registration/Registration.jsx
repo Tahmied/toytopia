@@ -18,7 +18,7 @@ const Registration = () => {
         email: '',
         password: '',
         terms: false,
-        photoURL : ''
+        photoURL: ''
     });
 
     const navigate = useNavigate()
@@ -41,14 +41,31 @@ const Registration = () => {
         e.preventDefault();
         setLoading(true)
         if (!formData.terms) {
-            alert('Please agree to the Terms of Service and Privacy Policy');
+            Swal.fire({
+                title: 'Terms and Conditions',
+                text: 'You must accept our terms and conditions before signing up for our service',
+                icon: 'warning',
+                showConfirmButton: true,
+            })
             return;
         }
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+        if (!passwordRegex.test(formData.password)) {
+            setLoading(false);
+            Swal.fire({
+                title: 'Weak Password',
+                text: 'Password must contain at least 1 uppercase letter, 1 lowercase letter, and be at least 6 characters long.',
+                icon: 'warning',
+                showConfirmButton: true,
+            });
+            return;
+        }
+
         createUserWithEmailAndPassword(auth, formData.email, formData.password)
             .then((res) => {
                 updateProfile(res.user, {
                     displayName: formData.fullName,
-                    photoURL : formData.photoURL
+                    photoURL: formData.photoURL
                 })
                 login(res.user)
                 setLoading(false)
