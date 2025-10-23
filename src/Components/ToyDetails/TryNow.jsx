@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router';
+import Swal from 'sweetalert2';
 import './trynowstyles.css';
 
 const TryNow = ({ setIsTrying, toyToTry }) => {
+    const navigate = useNavigate()
     const [formData, setFormData] = useState({
         name: '',
         email: ''
@@ -22,7 +25,13 @@ const TryNow = ({ setIsTrying, toyToTry }) => {
             const updatedTryingToys = [...currentTryingToys, toyToTry];
             localStorage.setItem('tryingToys', JSON.stringify(updatedTryingToys));
         }
-        console.log(JSON.parse(localStorage.getItem('tryingToys')));
+        Swal.fire({
+            icon:'success',
+            showCancelButton: false,
+            timer: 1000
+        }).then(()=>{
+            navigate('/tried-toys')
+        })
     };
 
     return (
