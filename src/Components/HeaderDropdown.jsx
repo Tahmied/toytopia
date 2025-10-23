@@ -2,20 +2,19 @@ import { useContext } from "react";
 import { AuthContext } from "./Authentication/AuthContext";
 
 
-const HeaderDropdown = ({ name }) => {
+const HeaderDropdown = ({ user }) => {
     const {logOut} = useContext(AuthContext)
 
     function handleLogout() {
         logOut()
     }
 
-
     return (
         <div className="dropdown-menu">
             <div className="dropdown-header">
-                <img src="/assets/profile.jpg" alt="User" className="dropdown-avatar" />
+                <img src={user.photoURL? user.photoURL :'/public/assets/usericon.svg'} alt="User" className="dropdown-avatar" />
                 <div className="user-info">
-                    <span className="user-name">{name}</span>
+                    <span className="user-name">{user.displayName}</span>
                 </div>
             </div>
 

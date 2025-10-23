@@ -6,11 +6,9 @@ import HeaderDropdown from "./HeaderDropdown";
 
 const Header = () => {
     const { user, isLoggedIn } = useContext(AuthContext)
-    // console.log(user, isLoggedIn)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const toggleMenu = () => {
-        console.log('toggled')
         setIsMenuOpen(!isMenuOpen)
     }
 
@@ -43,8 +41,6 @@ const Header = () => {
     function setDropdown() {
         setisDropdownActive(!isDropdownActive)
     }
-
-    console.log(isLoggedIn)
     const navigate = useNavigate()
     return (
         <>
@@ -59,7 +55,9 @@ const Header = () => {
                         <ul className="nav-list">
                             <NavLink className="nav-item" to='/'>Home</NavLink>
                             <NavLink className="nav-item" to='/toys'>All Toys</NavLink>
-                            <NavLink className="nav-item" to='/Installation'>Profile</NavLink>
+                            {
+                                isLoggedIn ? <NavLink className="nav-item" to='/Installation'>Profile</NavLink> : ''
+                            }
                         </ul>
                     </div>
 
@@ -67,10 +65,10 @@ const Header = () => {
                         {
                             isLoggedIn ? <div className="header-actions">
                                 <div onClick={() => setDropdown()} className="profile-nav">
-                                    <img src="/assets/profile.jpg" alt="" className="profile-pic" />
+                                    <img src={user.photoURL? user.photoURL :'/public/assets/usericon.svg'} alt="" className="profile-pic" />
                                 </div>
                                 {
-                                    isDropdownActive ? <HeaderDropdown name={user.displayName}></HeaderDropdown> : ''
+                                    isDropdownActive ? <HeaderDropdown user={user}></HeaderDropdown> : ''
                                 }
                             </div> : <Buttons link={'login'} text={'Login'}></Buttons>
                         }
@@ -89,7 +87,7 @@ const Header = () => {
                                         <img src="/assets/profile.jpg" alt="" className="profile-pic" />
                                     </div>
                                     {
-                                        isDropdownActive ? <HeaderDropdown name={user.displayName}></HeaderDropdown> : ''
+                                        isDropdownActive ? <HeaderDropdown user={user}></HeaderDropdown> : ''
                                     }</div> : <Buttons link={'login'} text={'Login'}></Buttons>
                             }
                             <label onChange={toggleMenu} className="hamburger">
