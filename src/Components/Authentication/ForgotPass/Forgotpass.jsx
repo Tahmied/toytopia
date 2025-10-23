@@ -1,5 +1,5 @@
 import { sendPasswordResetEmail } from 'firebase/auth';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router';
 import Swal from 'sweetalert2';
 import { auth } from '../../Firebase.init';
@@ -11,13 +11,16 @@ const Forgotpass = () => {
     const [savedEmail, setSavedEmail] = useState('')
     const navigate = useNavigate()
 
-    const foundEmail = localStorage.getItem('savedEmail')
-    if (foundEmail !== undefined) {
-        setSavedEmail(foundEmail)
-    } else {
-        return null
-    }
-    console.log(foundEmail)
+    useEffect(() => {
+        const foundEmail = localStorage.getItem('savedEmail')
+        if (foundEmail !== undefined) {
+            setSavedEmail(foundEmail)
+        } else {
+            return null
+        }
+        console.log(foundEmail)
+    }, [])
+
     function handleForgotpass(e) {
         e.preventDefault()
         setLoading(true)
@@ -83,7 +86,8 @@ const Forgotpass = () => {
                                         className="form-control"
                                         placeholder="name@email.com"
                                         required
-                                        value={savedEmail ? savedEmail : null}
+                                        value={savedEmail || ''}
+                                        onChange={(e) => setSavedEmail(e.target.value)}
                                     />
                                 </div>
                             </div>
