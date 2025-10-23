@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import './App.css'
+import Forgotpass from './Components/Authentication/ForgotPass/Forgotpass'
 import Login from './Components/Authentication/Login/Login'
 import Registration from './Components/Authentication/Registration/Registration'
 import Home from './Components/Homepage/Home'
@@ -34,6 +35,9 @@ const router = createBrowserRouter([
       },
       {
         path: 'edit-profile', element: <PrivateRoutes><EditProfile></EditProfile></PrivateRoutes>
+      },
+      {
+        path: 'forgot-password', Component : Forgotpass
       }
     ]
   }

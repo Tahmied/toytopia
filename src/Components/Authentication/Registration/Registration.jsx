@@ -105,19 +105,15 @@ const Registration = () => {
         <section className="registration-sec">
             <div className="register-container">
                 <div className="register-left">
-                    <div className="brand">
-                        <div className="brand-icon">P</div>
-                        <div className="brand-name">Premium</div>
-                    </div>
-                    <h1 className="welcome-text">Join Our Community</h1>
+                    <h1 className="welcome-text">Let the Fun Begin!</h1>
                     <p className="subtitle">
-                        Create your premium account and unlock exclusive features designed to enhance your experience.
+                        Register to explore a world full of toys, games, and endless fun!
+
                     </p>
                     <ul className="features">
-                        <li><i className="fas fa-check-circle"></i> Access to premium features</li>
-                        <li><i className="fas fa-check-circle"></i> Personalized dashboard</li>
-                        <li><i className="fas fa-check-circle"></i> 24/7 priority support</li>
-                        <li><i className="fas fa-check-circle"></i> Advanced security options</li>
+                        <li><i className="fas fa-check-circle"></i> Magical toy collections</li>
+                        <li><i className="fas fa-check-circle"></i> Exclusive deals just for you</li>
+                        <li><i className="fas fa-check-circle"></i> Friendly support whenever you need it</li>
                     </ul>
                 </div>
 
@@ -139,7 +135,7 @@ const Registration = () => {
                                     id="fullName"
                                     name="fullName"
                                     className="form-control"
-                                    placeholder="John Doe"
+                                    placeholder="Name here"
                                     value={formData.fullName}
                                     onChange={handleChange}
                                     required
@@ -158,7 +154,7 @@ const Registration = () => {
                                     id="email"
                                     name="email"
                                     className="form-control"
-                                    placeholder="name@company.com"
+                                    placeholder="name@email.com"
                                     value={formData.email}
                                     onChange={handleChange}
                                     required

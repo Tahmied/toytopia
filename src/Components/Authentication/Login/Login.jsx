@@ -83,7 +83,6 @@ const Login = () => {
 
     return (
         <>
-
             <section className="login">
                 <div className="login-container">
                     <div className="login-left">
@@ -159,7 +158,7 @@ const Login = () => {
                             </div>
 
                             <div className="signup-link">
-                                Don't have an account? <a href="/register">Sign up here</a>
+                                Don't have an account? <Link to={'/register'}>Sign up here</Link> 
                             </div>
                         </form>
                     </div>
