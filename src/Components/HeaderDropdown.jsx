@@ -1,9 +1,14 @@
 import { useContext } from "react";
+import { Link } from "react-router";
 import { AuthContext } from "./Authentication/AuthContext";
 
 
-const HeaderDropdown = ({ user }) => {
-    const {logOut} = useContext(AuthContext)
+const HeaderDropdown = ({ user , setisDropDownActive }) => {
+    const { logOut } = useContext(AuthContext)
+
+    function menuClicked () {
+        setisDropDownActive(false)
+    }
 
     function handleLogout() {
         logOut()
@@ -12,7 +17,7 @@ const HeaderDropdown = ({ user }) => {
     return (
         <div className="dropdown-menu">
             <div className="dropdown-header">
-                <img src={user.photoURL? user.photoURL :'/public/assets/usericon.svg'} alt="User" className="dropdown-avatar" />
+                <img src={user.photoURL ? user.photoURL : '/public/assets/usericon.svg'} alt="User" className="dropdown-avatar" />
                 <div className="user-info">
                     <span className="user-name">{user.displayName}</span>
                 </div>
@@ -20,13 +25,13 @@ const HeaderDropdown = ({ user }) => {
 
             <div className="dropdown-divider"></div>
 
-            <a href="#" className="dropdown-item">
+            <Link onClick={menuClicked} to={'/profile'} className="dropdown-item">
                 <span>My Profile</span>
-            </a>
+            </Link>
 
-            <a href="#" className="dropdown-item">
+            <Link onClick={menuClicked} to={'/edit-profile'} className="dropdown-item">
                 <span>Edit Profile</span>
-            </a>
+            </Link>
 
             <div className="dropdown-divider"></div>
 

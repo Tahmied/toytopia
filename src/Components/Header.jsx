@@ -68,7 +68,7 @@ const Header = () => {
                                     <img src={user.photoURL? user.photoURL :'/public/assets/usericon.svg'} alt="" className="profile-pic" />
                                 </div>
                                 {
-                                    isDropdownActive ? <HeaderDropdown user={user}></HeaderDropdown> : ''
+                                    isDropdownActive ? <HeaderDropdown setisDropDownActive={setisDropdownActive} user={user}></HeaderDropdown> : ''
                                 }
                             </div> : <Buttons link={'login'} text={'Login'}></Buttons>
                         }

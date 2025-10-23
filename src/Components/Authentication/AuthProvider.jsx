@@ -6,11 +6,13 @@ import { AuthContext } from './AuthContext';
 
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null)
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
             setUser(firebaseUser)
+            setIsLoggedIn(!!firebaseUser); 
             setLoading(false);
         });
 
@@ -19,17 +21,19 @@ const AuthProvider = ({ children }) => {
 
     const login = (userData) => {
         setUser(userData);
+        setIsLoggedIn(true)
     };
 
     const logOut = () => {
         setUser(null);
-        auth.signOut(); 
+        auth.signOut();
+        setIsLoggedIn(false)
     };
 
     if (loading) return <Loader></Loader>
 
     return (
-        <AuthContext.Provider value={{ user, login, logOut, isLoggedIn: !!user }}>
+        <AuthContext.Provider value={{ user, login, logOut, isLoggedIn }}>
             {children}
         </AuthContext.Provider>
     );
