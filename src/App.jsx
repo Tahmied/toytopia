@@ -3,10 +3,12 @@ import './App.css'
 import Login from './Components/Authentication/Login/Login'
 import Registration from './Components/Authentication/Registration/Registration'
 import Home from './Components/Homepage/Home'
+import EditProfile from './Components/Profile/EditProfile'
 import MyProfile from './Components/Profile/MyProfile'
 import Root from './Components/Root'
 import ToyDetails from './Components/ToyDetails/ToyDetails'
 import Toys from './Components/ToysPage/Toys'
+import PrivateRoutes from './Routes/PrivateRoutes'
 
 const router = createBrowserRouter([
   {
@@ -28,7 +30,10 @@ const router = createBrowserRouter([
         path: 'register', Component: Registration
       },
       {
-        path: 'profile', Component: MyProfile
+        path: 'profile', element: <PrivateRoutes><MyProfile></MyProfile></PrivateRoutes>
+      },
+      {
+        path: 'edit-profile', element: <PrivateRoutes><EditProfile></EditProfile></PrivateRoutes>
       }
     ]
   }
