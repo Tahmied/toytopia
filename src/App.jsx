@@ -3,6 +3,7 @@ import './App.css'
 import Forgotpass from './Components/Authentication/ForgotPass/Forgotpass'
 import Login from './Components/Authentication/Login/Login'
 import Registration from './Components/Authentication/Registration/Registration'
+import ErrorPage from './Components/ErrorPage'
 import Home from './Components/Homepage/Home'
 import EditProfile from './Components/Profile/EditProfile'
 import MyProfile from './Components/Profile/MyProfile'
@@ -42,6 +43,9 @@ const router = createBrowserRouter([
       },
       {
         path: 'tried-toys', element : <PrivateRoutes><TriedToys></TriedToys></PrivateRoutes> 
+      },
+      {
+        path: '*', Component: ErrorPage
       }
     ]
   }

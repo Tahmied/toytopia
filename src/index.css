@@ -1456,3 +1456,7 @@ body.no-scroll {
         margin-top: 15px;
     }
 }
+
+.error-img {
+    max-width: 300px;
+}
