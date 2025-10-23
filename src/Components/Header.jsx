@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router";
+import Buttons from "./Buttons";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -54,10 +55,7 @@ const Header = () => {
                     </div>
 
                     <div className="header-cta">
-                        <button className="header-cta-btn">
-                            <img src="/assets/github-logo.svg" alt="" className="header-cta-img" />
-                            Login
-                        </button>
+                        <Buttons link={'login'} text={'Login'}></Buttons>
                     </div>
                 </div>
                 <div className="mobile-menu">

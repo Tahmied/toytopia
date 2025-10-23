@@ -1,12 +1,22 @@
-import { createContext, useState } from 'react';
+import { useState } from 'react';
+import { AuthContext } from './AuthContext.jsx ';
 
-export const AuthContext = createContext()
 
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null)
+
+    const login = (userData)=>{
+        setUser(userData)
+        localStorage.setItem(user, userData)
+    }
+
+    const logOut = ()=>{
+        setUser(null)
+        localStorage.removeItem('user')
+    }
     
     return (
-        <AuthContext.Provider value={{ user, setUser }}>
+        <AuthContext.Provider value={{ user, login, logOut }}>
             {children}
         </AuthContext.Provider>
     );

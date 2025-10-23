@@ -1,29 +1,17 @@
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { useContext, useState } from 'react';
 import { Link } from 'react-router';
+import Swal from 'sweetalert2';
 import { auth } from '../../Firebase.init';
-import { AuthContext } from '../AuthProvider';
+import { AuthContext } from '../AuthContext.jsx ';
 import './registration.css';
 
 const googleAuthProvider = new GoogleAuthProvider()
 
-const Registration = () => {    
-    
-    function handleGoogleLogin(){
-        signInWithPopup(auth, googleAuthProvider)
-        .then((res)=>{
-            setUser(res.user)
-            console.log(res)
-        })
-        .catch((err)=>{
-            console.log(err)
-        })
-        console.log(user)
-    }
-    const {user, setUser} = useContext(AuthContext)
-    // useEffect(()=> {
-    //     setUser({"testing" : "test@gmail.com"})
-    // },[])
+const Registration = () => {
+
+    const { user, login } = useContext(AuthContext)
+
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -56,6 +44,22 @@ const Registration = () => {
     };
 
 
+    function handleGoogleLogin() {
+        signInWithPopup(auth, googleAuthProvider)
+            .then((res) => {
+                login(res.user)
+                Swal.fire({
+                    title: 'Registration Successfull',
+                    text: 'Your account has been registered!',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                });
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+        console.log(user)
+    }
 
     return (
         <section className="registration-sec">
@@ -175,12 +179,7 @@ const Registration = () => {
                             >
                                 <i className="fab fa-google"></i> Google
                             </button>
-                            <button
-                                type="button"
-                                className="social-button"
-                            >
-                                <i className="fab fa-apple"></i> Apple
-                            </button>
+
                         </div>
 
                         <div className="login-link">

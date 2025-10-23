@@ -1,6 +1,11 @@
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { useContext, useState } from 'react';
-import { AuthContext } from '../AuthProvider';
+import Swal from 'sweetalert2';
+import { auth } from '../../Firebase.init';
+import { AuthContext } from '../AuthContext.jsx ';
 import './login.css';
+
+const googleAuthProvider = new GoogleAuthProvider()
 
 
 const Login = () => {
@@ -8,8 +13,25 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
 
-    const {user, setUser} = useContext(AuthContext)
+    const { user, login } = useContext(AuthContext)
     console.log(user)
+
+    function handleGoogleLogin() {
+        signInWithPopup(auth, googleAuthProvider)
+            .then((res) => {
+                login(res.user)
+                Swal.fire({
+                    title: 'Login Successfull',
+                    text: 'You have been logged in properly',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                });
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+        console.log(user)
+    }
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -94,11 +116,8 @@ const Login = () => {
                         <div className="divider"><span>Or continue with</span></div>
 
                         <div className="social-login">
-                            <button type="button" className="social-button">
+                            <button onClick={handleGoogleLogin} type="button" className="social-button">
                                 <i className="fab fa-google"></i> Google
-                            </button>
-                            <button type="button" className="social-button">
-                                <i className="fab fa-apple"></i> Apple
                             </button>
                         </div>
 
