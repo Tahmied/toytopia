@@ -1,5 +1,6 @@
 import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { useContext, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link, useNavigate } from 'react-router';
 import Swal from 'sweetalert2';
 import { auth } from '../../Firebase.init';
@@ -77,7 +78,7 @@ const Login = () => {
         setShowPassword(!showPassword);
     };
 
-    const saveEmail = (email)=>{
+    const saveEmail = (email) => {
         setEmail(email)
         localStorage.setItem('savedEmail', email)
     }
@@ -88,6 +89,9 @@ const Login = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Sign In | ToyTopia</title>
+            </Helmet>
             <section className="login">
                 <div className="login-container">
                     <div className="login-left">
@@ -163,7 +167,7 @@ const Login = () => {
                             </div>
 
                             <div className="signup-link">
-                                Don't have an account? <Link to={'/register'}>Sign up here</Link> 
+                                Don't have an account? <Link to={'/register'}>Sign up here</Link>
                             </div>
                         </form>
                     </div>

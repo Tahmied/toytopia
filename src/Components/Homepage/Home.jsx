@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { Helmet } from "react-helmet";
 import Loader from "../Loading";
 import Besttoys from "./Besttoys";
 import CreativeTwo from "./CreativeTwo";
@@ -9,6 +10,10 @@ import SliderSection from "./Slider";
 const Home = () => {
     return (
         <>
+            <Helmet>
+                <title>ToyTopia | A Local Kids Toy Store Platform</title>
+            </Helmet>
+
             <Hero></Hero>
             <SliderSection></SliderSection>
             <Suspense fallback={<Loader></Loader>}>

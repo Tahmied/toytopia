@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import { useLoaderData, useParams } from "react-router";
 import Buttons from "../Buttons";
 import './todetails.css';
@@ -24,10 +25,13 @@ const ToyDetails = () => {
     }
 
     return (
-        <>  
+        <>
+            <Helmet>
+                <title>{toyToTry.toyName} | ToyTopia</title>
+            </Helmet>
 
             {
-                isTrying? <TryNow toyToTry={toyToTry} setIsTrying={setisTrying}></TryNow> : ''
+                isTrying ? <TryNow toyToTry={toyToTry} setIsTrying={setisTrying}></TryNow> : ''
             }
 
             <section className="app-details">
@@ -56,7 +60,7 @@ const ToyDetails = () => {
                                 <p className="download-detail-num">${toyToTry.price}</p>
                             </div>
                         </div>
-                        <Buttons onClick={()=> setisTrying(!isTrying)} text={'Try Now'}></Buttons>
+                        <Buttons onClick={() => setisTrying(!isTrying)} text={'Try Now'}></Buttons>
                     </div>
                 </div>
                 <hr className="app-details-below-hr" />

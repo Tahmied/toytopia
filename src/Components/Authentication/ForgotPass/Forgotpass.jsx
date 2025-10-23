@@ -1,5 +1,6 @@
 import { sendPasswordResetEmail } from 'firebase/auth';
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link, useNavigate } from 'react-router';
 import Swal from 'sweetalert2';
 import { auth } from '../../Firebase.init';
@@ -54,6 +55,9 @@ const Forgotpass = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Forgot Password | ToyTopia</title>
+            </Helmet>
             <section className="login">
                 <div className="login-container">
                     <div className="login-left">

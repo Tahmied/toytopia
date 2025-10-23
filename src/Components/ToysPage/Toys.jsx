@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+import { Helmet } from 'react-helmet';
 import Loader from '../Loading';
 import ToyList from './ToyList';
 import ToysHero from './ToysHero';
@@ -6,10 +7,13 @@ import ToysHero from './ToysHero';
 const Toys = () => {
     return (
         <>
-        <ToysHero></ToysHero>
-        <Suspense fallback={<Loader></Loader>}>
-            <ToyList></ToyList>
-        </Suspense>
+            <Helmet>
+                <title>All Toys | ToyTopia</title>
+            </Helmet>
+            <ToysHero></ToysHero>
+            <Suspense fallback={<Loader></Loader>}>
+                <ToyList></ToyList>
+            </Suspense>
         </>
     );
 };
