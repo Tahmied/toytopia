@@ -8,7 +8,7 @@ const Toycard = ({ name, rating, stock, price, img, path }) => {
         Aos.init()
     },[])
     return (
-        <div data-aos-offset="700" data-aos-duration='1200' data-aos="fade-up" className="toy-card">
+        <div data-aos-offset="500" data-aos-duration='1200' data-aos="fade-up" className="toy-card">
             <div className="toy-image">
                 <img src={img} />
             </div>
