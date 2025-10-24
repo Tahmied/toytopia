@@ -116,7 +116,7 @@ const Header = () => {
                         </svg>
                     </label>
 
-                    <ul className="mobile-nav-list"><NavLink className="nav-item" to='/'>Home</NavLink>
+                    <ul className="mobile-nav-list">
                         <NavLink className="nav-item" to='/'>Home</NavLink>
                         <NavLink className="nav-item" to='/toys'>All Toys</NavLink>
                         {
