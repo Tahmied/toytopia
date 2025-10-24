@@ -87,7 +87,7 @@ const Header = () => {
                             {
                                 isLoggedIn ? <div>
                                     <div onClick={() => setDropdown()} className={`mobile-profile-nav ${isMenuOpen ? 'fade-out' : ''}`}>
-                                        <img src="/assets/profile.jpg" alt="" className="profile-pic" />
+                                        <img src={user.photoURL ? user.photoURL : '/public/assets/usericon.svg'} alt="" className="profile-pic" />
                                     </div>
                                     {
                                         isDropdownActive ? <HeaderDropdown user={user}></HeaderDropdown> : ''
