@@ -1,16 +1,47 @@
-# React + Vite
+# ToyTopia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, vibrant toy marketplace built with React. Users can browse toys, log in, view toy details (protected), and try a toy. 
 
-Currently, two official plugins are available:
+# Live
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Key features
+Email/password + Google authentication (Firebase).
+Protected routes (toy details, My Profile, extra private page).
+Try Now form — saved to localStorage.
+My Toys — shows all tried toys and lets user "sell" them.
+Responsive layout (mobile / tablet / desktop).
+Slider on home (Swiper or Daisy UI).
+Dynamic page titles and a 404 page.
+Profile page: update name & photo (uses updateProfile()).
+Forgot password flow (sends reset email).
 
-## React Compiler
+# Used Packages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+react - core framework for the app.
 
-## Expanding the ESLint configuration
+react router — routing and protected routes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+firebase — authentication (email/password, Google) and auth state persistence.
+
+vite — dev server and build tool.
+
+tailwindcss (+ daisyui) + UI verce website components — fast utility CSS and UI components for styling.
+
+React slick and aos — For adding the slider in the hero section and for scroll based animations in the homepage.
+
+sweetalert2 — for User interactivity.
+
+# Run locally
+Clone the repo.
+Install - npm install
+Create .env and add Firebase keys (do not commit .env):
+
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+
+Start - npm run dev
+

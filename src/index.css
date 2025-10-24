@@ -235,7 +235,7 @@ body.no-scroll {
     overscroll-behavior: none;
 }
 
-@media (max-width:730px) {
+@media (max-width:760px) {
     .header-container {
         display: none;
     }
