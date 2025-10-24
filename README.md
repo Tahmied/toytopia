@@ -12,13 +12,21 @@ https://toytopia-8816f.web.app/
 
 # Key features
 Email/password + Google authentication (Firebase).
+
 Protected routes (toy details, My Profile, extra private page).
+
 Try Now form — saved to localStorage.
+
 My Toys — shows all tried toys and lets user "sell" them.
+
 Responsive layout (mobile / tablet / desktop).
+
 Slider on home (Swiper or Daisy UI).
+
 Dynamic page titles and a 404 page.
+
 Profile page: update name & photo (uses updateProfile()).
+
 Forgot password flow (sends reset email).
 
 # Used Packages
