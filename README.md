@@ -2,7 +2,12 @@
 
 A simple, vibrant toy marketplace built with React. Users can browse toys, log in, view toy details (protected), and try a toy. 
 
+# Purpose
+The purpose of ToyTopia is to create a fun and easy-to-use online toy marketplace where users can explore different toys, learn more about them, and try their favorites. It helps users manage their toy collection, update their profile, and enjoy a smooth and secure browsing experience with simple login options and responsive design.
+
 # Live
+https://toytopia-flax.vercel.app/
+https://toytopia-8816f.web.app/
 
 # Key features
 Email/password + Google authentication (Firebase).
