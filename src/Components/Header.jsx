@@ -68,7 +68,7 @@ const Header = () => {
                         {
                             isLoggedIn ? <div className="header-actions">
                                 <div onClick={() => setDropdown()} className="profile-nav">
-                                    <img src={user.photoURL? user.photoURL :'/public/assets/usericon.svg'} alt="" className="profile-pic" />
+                                    <img src={user.photoURL ? user.photoURL : '/public/assets/usericon.svg'} alt="" className="profile-pic" />
                                 </div>
                                 {
                                     isDropdownActive ? <HeaderDropdown setisDropDownActive={setisDropdownActive} user={user}></HeaderDropdown> : ''
@@ -117,12 +117,14 @@ const Header = () => {
                     </label>
 
                     <ul className="mobile-nav-list"><NavLink className="nav-item" to='/'>Home</NavLink>
-                        <NavLink className="nav-item" to='/apps'>Apps</NavLink>
-                        <NavLink className="nav-item" to='/Installation'>Installation</NavLink>
-                        <button onClick={() => window.open('https://www.github.com/tahmied', '_blank')} className="header-cta-btn">
-                            <img src="/assets/github-logo.svg" alt="" className="header-cta-img" />
-                            Contribute
-                        </button>
+                        <NavLink className="nav-item" to='/'>Home</NavLink>
+                        <NavLink className="nav-item" to='/toys'>All Toys</NavLink>
+                        {
+                            isLoggedIn ? <NavLink className="nav-item" to='/profile'>Profile</NavLink> : ''
+                        }
+                        {
+                            isLoggedIn ? <NavLink className="nav-item" to='/tried-toys'>My Toys</NavLink> : ''
+                        }
                     </ul>
                 </div>
 
