@@ -662,6 +662,17 @@ body.no-scroll {
     transform: translateY(-4px);
 }
 
+.all-apps-btn {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.all-apps-btn.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
 @media (max-width:1024px) {
     .hero-big-text {
         font-size: 40px;

@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { NavLink, useNavigate } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 import { AuthContext } from "./Authentication/AuthContext.jsx";
 import Buttons from "./Buttons";
 import HeaderDropdown from "./HeaderDropdown";
@@ -91,7 +91,8 @@ const Header = () => {
                                     </div>
                                     {
                                         isDropdownActive ? <HeaderDropdown user={user}></HeaderDropdown> : ''
-                                    }</div> : <Buttons link={'login'} text={'Login'}></Buttons>
+                                    }</div> : (<Link to={`/login`} className={`all-apps-link ${isMenuOpen ? 'fade-out' : ''}`}>
+                                    <button className={`all-apps-btn ${isMenuOpen ? 'fade-out' : ''}`}>Login</button></Link>)
                             }
                             <label onChange={toggleMenu} className="hamburger">
                                 <input type="checkbox" />
@@ -102,7 +103,6 @@ const Header = () => {
                             </label>
                         </div>
                     </div>
-
 
 
                 </div>
