@@ -16,7 +16,7 @@ const TriedToys = () => {
             </Helmet>
             <section className="popular-toys popular-toys-sec all-toys-sec">
                 <div className="container">
-                    <h2 className="section-title">All Toys</h2>
+                    <h2 className="section-title">Tried Toys</h2>
                     <div className="toys-grid">
                         {
                             triedToys.map(toy => {

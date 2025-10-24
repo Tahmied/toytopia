@@ -48,7 +48,7 @@ const Header = () => {
                 <div className="header-container">
 
                     <div onClick={() => navigate('/')} className='logo'>
-                        <img src="/assets/logo.png" alt="" className="logo-icon" />
+                        <img src="/assets/logo.svg" alt="" className="logo-icon" />
                     </div>
 
                     <div className='menu'>
@@ -79,7 +79,7 @@ const Header = () => {
                 </div>
                 <div className="mobile-menu">
                     <div onClick={() => navigate('/')} className='logo'>
-                        <img src="/assets/logo.png" alt="" className="logo-icon" />
+                        <img src="/assets/logo.svg" alt="" className="logo-icon" />
                     </div>
 
                     <div className="mobile-header-actions">
