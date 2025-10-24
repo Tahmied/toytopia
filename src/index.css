@@ -654,7 +654,7 @@ body.no-scroll {
     text-transform: capitalize;
     color: #FFFFFF;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: transform 0.2s ease;
     max-width: 200px;
 }
 
