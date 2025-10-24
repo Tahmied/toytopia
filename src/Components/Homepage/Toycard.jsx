@@ -1,8 +1,14 @@
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 import { Link } from "react-router";
 
 const Toycard = ({ name, rating, stock, price, img, path }) => {
+    useEffect(()=>{
+        Aos.init()
+    },[])
     return (
-        <div className="toy-card">
+        <div data-aos-offset="700" data-aos-duration='1200' data-aos="fade-up" className="toy-card">
             <div className="toy-image">
                 <img src={img} />
             </div>
