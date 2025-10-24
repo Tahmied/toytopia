@@ -486,6 +486,7 @@ body.no-scroll {
     position: absolute;
     top: 60px;
     right: 1px;
+    z-index: 400;
 }
 
 .dropdown-header {
