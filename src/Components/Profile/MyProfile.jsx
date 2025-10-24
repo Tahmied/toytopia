@@ -34,6 +34,12 @@ const MyProfile = () => {
 
                     <div className="profile-details">
                         <div className="detail-group">
+                            <label>Photo Url</label>
+                            <div className="detail-value">{user.photoURL}</div>
+                        </div>
+
+
+                        <div className="detail-group">
                             <label>Display Name</label>
                             <div className="detail-value">{user.displayName}</div>
                         </div>

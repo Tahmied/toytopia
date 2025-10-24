@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "npm run build && cp dist/index.html dist/200.html && surge ./dist my-toytopia-123.surge.sh",
+    "frdeploy": "npm run build && firebase deploy",
     "lint": "eslint .",
     "preview": "vite preview"
   },
