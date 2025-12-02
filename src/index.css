@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
 
 * {
     margin: 0;
@@ -18,13 +19,16 @@ a {
     text-decoration: none;
 }
 
-
 /* header */
 
 header {
     padding: 16px 80px;
-    background: #e9f8ff;
+    background: #c8ebff;
     border-bottom: 1px solid #cae0ea;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
 }
 
 .header-container {
@@ -197,7 +201,7 @@ header {
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
     top: 0;
-    height: 100%;
+    height: 100vh;
     flex-direction: column-reverse;
     z-index: 100;
 }
@@ -217,6 +221,7 @@ header {
 .cover-whole-body {
     display: none;
     z-index: 90;
+    height: 100vh;
 }
 
 .hidden {
@@ -281,7 +286,7 @@ body.no-scroll {
         left: 0;
         padding: 0;
         margin: 0;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         backdrop-filter: blur(2px);
         background-color: #0000005e;
@@ -599,6 +604,9 @@ body.no-scroll {
     pointer-events: none;
     transition-delay: 0.1s;
 }
+
+
+
 
 /* hero section */
 

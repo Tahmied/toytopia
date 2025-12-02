@@ -16,7 +16,7 @@ const Root = () => {
     return (
         <>
             <Header></Header>
-            <div className="whole-site-container">
+            <div className="whole-site-container !mt-[150px]">
                 {
                     navigation.state === 'loading' ? <Loader></Loader> : <Outlet></Outlet>
                 }

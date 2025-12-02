@@ -5,6 +5,7 @@ import Buttons from "./Buttons";
 import HeaderDropdown from "./HeaderDropdown";
 
 const Header = () => {
+    const [isDropdownActive, setisDropdownActive] = useState(false)
     const { user, isLoggedIn } = useContext(AuthContext)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -35,8 +36,6 @@ const Header = () => {
             document.body.classList.remove('no-scroll');
         };
     }, [isMenuOpen]);
-
-    const [isDropdownActive, setisDropdownActive] = useState(false)
 
     function setDropdown() {
         setisDropdownActive(!isDropdownActive)
@@ -92,7 +91,7 @@ const Header = () => {
                                     {
                                         isDropdownActive ? <HeaderDropdown user={user}></HeaderDropdown> : ''
                                     }</div> : (<Link to={`/login`} className={`all-apps-link ${isMenuOpen ? 'fade-out' : ''}`}>
-                                    <button className={`all-apps-btn ${isMenuOpen ? 'fade-out' : ''}`}>Login</button></Link>)
+                                        <button className={`all-apps-btn ${isMenuOpen ? 'fade-out' : ''}`}>Login</button></Link>)
                             }
                             <label onChange={toggleMenu} className="hamburger">
                                 <input type="checkbox" />
@@ -117,8 +116,8 @@ const Header = () => {
                     </label>
 
                     <ul className="mobile-nav-list">
-                        <NavLink className="nav-item" to='/'>Home</NavLink>
                         <NavLink className="nav-item" to='/toys'>All Toys</NavLink>
+                        <NavLink className="nav-item" to='/'>Home</NavLink>
                         {
                             isLoggedIn ? <NavLink className="nav-item" to='/profile'>Profile</NavLink> : ''
                         }
