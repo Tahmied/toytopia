@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Buttons from "../Buttons";
 
 const CreativeTwo = () => {
@@ -19,7 +20,7 @@ const CreativeTwo = () => {
             <section className="aboutpage-cta-section h-[50vh] flex flex-col justify-center items-center !bg-[#ffffffb9] !mx-auto w-[80%] !mb-8">
                 <h2>Ready to Explore?</h2>
                 <p>Browse our collection and find the perfect toy for your little ones today.</p>
-                <button className="aboutpage-cta-button">Shop Now</button>
+                <Link to={'/toys'}> <button className="aboutpage-cta-button">Shop Now</button></Link>
             </section>
         </>
 

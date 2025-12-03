@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import './AboutPage.css';
 
 export default function AboutPage() {
@@ -17,8 +18,8 @@ export default function AboutPage() {
         <section className="aboutpage-story-section">
           <h2>Our Story</h2>
           <p>
-            Welcome to our toy marketplace, where imagination meets quality. We started with a simple 
-            mission: to connect families with the best toys that inspire creativity, learning, and fun. 
+            Welcome to our toy marketplace, where imagination meets quality. We started with a simple
+            mission: to connect families with the best toys that inspire creativity, learning, and fun.
             Our curated selection features trusted sellers and beloved brands that parents can rely on.
           </p>
         </section>
@@ -48,7 +49,8 @@ export default function AboutPage() {
         <section className="aboutpage-cta-section">
           <h2>Ready to Explore?</h2>
           <p>Browse our collection and find the perfect toy for your little ones today.</p>
-          <button className="aboutpage-cta-button">Shop Now</button>
+          <Link to={'/toys'}> <button className="aboutpage-cta-button">Shop Now</button></Link>
+
         </section>
       </div>
     </div>
