@@ -4,6 +4,7 @@ import AboutPage from './Components/About/About'
 import Forgotpass from './Components/Authentication/ForgotPass/Forgotpass'
 import Login from './Components/Authentication/Login/Login'
 import Registration from './Components/Authentication/Registration/Registration'
+import Contact from './Components/Contact/Contact'
 import ErrorPage from './Components/ErrorPage'
 import Home from './Components/Homepage/Home'
 import EditProfile from './Components/Profile/EditProfile'
@@ -35,6 +36,9 @@ const router = createBrowserRouter([
       },
       {
         path: 'about' , Component: AboutPage
+      },
+      {
+        path: 'contact', Component: Contact
       },
       {
         path: 'profile', element: <PrivateRoutes><MyProfile></MyProfile></PrivateRoutes>

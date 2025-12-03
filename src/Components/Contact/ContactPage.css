@@ -1,0 +1,245 @@
+/* ContactPage.css */
+.contactpage-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ffffff, #f3f4ff);
+    margin-top: -2rem;
+}
+
+.contactpage-hero-section {
+    background-color: #7680fe;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contactpage-hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contactpage-hero-content p {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contactpage-main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.contactpage-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.contactpage-contact-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactpage-contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contactpage-card-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #7680fe;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.contactpage-card-icon svg {
+    width: 35px;
+    height: 35px;
+}
+
+.contactpage-contact-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.contactpage-contact-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.contactpage-contact-card a {
+    font-size: 1.125rem;
+    color: #7680fe;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contactpage-contact-card a:hover {
+    color: #5a64e6;
+    text-decoration: underline;
+}
+
+.contactpage-contact-card address {
+    font-size: 1.125rem;
+    color: #7680fe;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.contactpage-info-section {
+    text-align: center;
+    margin-bottom: 80px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactpage-info-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.contactpage-info-section p {
+    font-size: 1.125rem;
+    color: #4a4a4a;
+    line-height: 1.8;
+}
+
+.contactpage-hours-section {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
+}
+
+.contactpage-hours-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contactpage-hours-grid {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contactpage-hours-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.contactpage-hours-item:last-child {
+    border-bottom: none;
+}
+
+.contactpage-day {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.contactpage-time {
+    font-size: 1.125rem;
+    color: #666;
+}
+
+.contactpage-social-section {
+    text-align: center;
+}
+
+.contactpage-social-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.contactpage-social-section p {
+    font-size: 1.125rem;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+}
+
+.contactpage-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contactpage-social-link {
+    width: 50px;
+    height: 50px;
+    background-color: #7680fe;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.contactpage-social-link:hover {
+    background-color: #5a64e6;
+    transform: scale(1.1);
+}
+
+.contactpage-social-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .contactpage-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .contactpage-hero-content p {
+        font-size: 1rem;
+    }
+
+    .contactpage-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contactpage-info-section h2,
+    .contactpage-hours-section h2,
+    .contactpage-social-section h2 {
+        font-size: 2rem;
+    }
+
+    .contactpage-main-content {
+        padding: 40px 15px;
+    }
+
+    .contactpage-hours-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+}
