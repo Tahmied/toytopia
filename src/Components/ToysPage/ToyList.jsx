@@ -10,7 +10,7 @@ const ToyList = () => {
                 <div className="toys-grid">
                     {
                         toys.map(toy => {
-                            return <Toycard path={toy.toyId} key={toy.toyId} name={`${toy.toyName}`} price={toy.price} rating={toy.rating} stock={toy.availableQuantity} img={toy.pictureURL}></Toycard>
+                            return <Toycard path={toy.toyId} key={toy.toyId} name={`${toy.toyName}`} price={toy.price} rating={toy.rating} stock={toy.availableQuantity} img={toy.pictureURL} desc={toy.description}></Toycard>
                         })
                     }
                 </div>

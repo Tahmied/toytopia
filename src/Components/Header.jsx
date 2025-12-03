@@ -54,6 +54,8 @@ const Header = () => {
                         <ul className="nav-list">
                             <NavLink className="nav-item" to='/'>Home</NavLink>
                             <NavLink className="nav-item" to='/toys'>All Toys</NavLink>
+                            <NavLink className="nav-item" to='/about'>About Us</NavLink>
+                            <NavLink className="nav-item" to='/contact'>Contact Us</NavLink>
                             {
                                 isLoggedIn ? <NavLink className="nav-item" to='/profile'>Profile</NavLink> : ''
                             }
@@ -72,7 +74,7 @@ const Header = () => {
                                 {
                                     isDropdownActive ? <HeaderDropdown setisDropDownActive={setisDropdownActive} user={user}></HeaderDropdown> : ''
                                 }
-                            </div> : <Buttons link={'login'} text={'Login'}></Buttons>
+                            </div> : (<div className="flex flex-row gap-4"><Buttons link={'login'} text={'Login'}></Buttons> <Buttons link={'register'} text={'Registration'}></Buttons></div>)
                         }
                     </div>
                 </div>
@@ -118,6 +120,8 @@ const Header = () => {
                     <ul className="mobile-nav-list">
                         <NavLink className="nav-item" to='/toys'>All Toys</NavLink>
                         <NavLink className="nav-item" to='/'>Home</NavLink>
+                        <NavLink className="nav-item" to='/about'>About Us</NavLink>
+                        <NavLink className="nav-item" to='/contact'>Contact Us</NavLink>
                         {
                             isLoggedIn ? <NavLink className="nav-item" to='/profile'>Profile</NavLink> : ''
                         }

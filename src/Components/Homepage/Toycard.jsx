@@ -3,10 +3,10 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import { Link } from "react-router";
 
-const Toycard = ({ name, rating, stock, price, img, path }) => {
-    useEffect(()=>{
+const Toycard = ({ name, rating, stock, price, img, path, desc }) => {
+    useEffect(() => {
         Aos.init()
-    },[])
+    }, [])
     return (
         <div data-aos-offset="500" data-aos-duration='1200' data-aos="fade-up" className="toy-card">
             <div className="toy-image">
@@ -19,7 +19,13 @@ const Toycard = ({ name, rating, stock, price, img, path }) => {
                     <div className="toy-price">${price}</div>
                 </div>
 
+                
+                <div className="toy-desc-container">
+                    <p className="toy-desc">{desc}</p>
+                </div>
+
                 <div className="toy-meta">
+
                     <div className="rating-badge">
                         <span className="rating-value">{rating}</span>
                         <span className="rating-max">/5</span>

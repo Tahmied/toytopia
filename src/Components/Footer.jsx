@@ -1,10 +1,15 @@
+import { useNavigate } from "react-router";
 
 const Footer = () => {
+    const navigate = useNavigate()
     return (
         <>
             <footer className="footer">
                 <div className="footer-container">
                     <div className="footer-section">
+                        <div onClick={() => navigate('/')} className='logo'>
+                            <img src="/assets/logo.svg" alt="" className="logo-icon" />
+                        </div>
                         <h3>About Us</h3>
                         <p>We provide the best toys for children of all ages, focusing on safety, education, and fun. Our mission is to bring joy to families everywhere.</p>
                         <div className="social-links">

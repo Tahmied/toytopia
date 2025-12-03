@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import './App.css'
+import AboutPage from './Components/About/About'
 import Forgotpass from './Components/Authentication/ForgotPass/Forgotpass'
 import Login from './Components/Authentication/Login/Login'
 import Registration from './Components/Authentication/Registration/Registration'
@@ -24,13 +25,16 @@ const router = createBrowserRouter([
         path: 'toys', Component: Toys, loader: () => fetch('/toys.json')
       },
       {
-        path: 'toy/:toyid', element: <PrivateRoutes><ToyDetails></ToyDetails></PrivateRoutes> , loader: () => fetch('/toys.json')
+        path: 'toy/:toyid', element: <ToyDetails></ToyDetails>, loader: () => fetch('/toys.json')
       },
       {
         path: 'login', Component: Login
       },
       {
         path: 'register', Component: Registration
+      },
+      {
+        path: 'about' , Component: AboutPage
       },
       {
         path: 'profile', element: <PrivateRoutes><MyProfile></MyProfile></PrivateRoutes>
