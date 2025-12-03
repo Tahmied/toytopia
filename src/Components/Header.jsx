@@ -54,8 +54,13 @@ const Header = () => {
                         <ul className="nav-list">
                             <NavLink className="nav-item" to='/'>Home</NavLink>
                             <NavLink className="nav-item" to='/toys'>All Toys</NavLink>
-                            <NavLink className="nav-item" to='/about'>About Us</NavLink>
-                            <NavLink className="nav-item" to='/contact'>Contact Us</NavLink>
+                            {
+                                isLoggedIn ? '' : <NavLink className="nav-item" to='/about'>About Us</NavLink>
+                            }
+                            {
+                                isLoggedIn ? '' :<NavLink className="nav-item" to='/contact'>Contact Us</NavLink>
+                            }
+
                             {
                                 isLoggedIn ? <NavLink className="nav-item" to='/profile'>Profile</NavLink> : ''
                             }

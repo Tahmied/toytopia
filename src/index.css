@@ -242,7 +242,7 @@ body.no-scroll {
     overscroll-behavior: none;
 }
 
-@media (max-width:760px) {
+@media (max-width:940px) {
     .header-container {
         display: none;
     }
