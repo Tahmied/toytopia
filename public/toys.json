@@ -1,7 +1,7 @@
 [
     {
         "toyId": 1,
-        "toyName": "Rubik’s Cube 3x3",
+        "toyName": "Rubik's Cube 3x3",
         "sellerName": "Toys R Us Local",
         "sellerEmail": "contact@toysruslocal.com",
         "price": 49.99,
@@ -9,7 +9,8 @@
         "availableQuantity": 75,
         "description": "A timeless set of colorful Lego bricks that encourages creativity and problem-solving. Kids can build anything they imagine, from houses to vehicles.",
         "pictureURL": "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Puzzle_Game_Rubiks_Cube_1Pieces-Non_Brand-7f93a-411106.png",
-        "subCategory": "Building Blocks"
+        "subCategory": "Building Blocks",
+        "fullDescription": "A timeless set of colorful Lego bricks that encourages creativity and problem-solving. Kids can build anything they imagine, from houses to vehicles. This classic building toy provides endless entertainment while developing fine motor skills, spatial awareness, and creative thinking abilities in children of all ages. The set includes a wide variety of brick shapes, sizes, and vibrant colors that allow for unlimited construction possibilities. Children can follow included instructions to build specific models or let their imagination run wild creating their own unique designs. Perfect for solo play or group activities, these building blocks promote collaboration, patience, and engineering skills. Made from high-quality, durable materials that are safe for children and built to last through years of creative play and countless building adventures."
     },
     {
         "toyId": 2,
@@ -21,7 +22,8 @@
         "availableQuantity": 40,
         "description": "A luxury dollhouse featuring multiple rooms, furniture, and accessories to inspire imaginative play with Barbie and friends.",
         "pictureURL": "https://rokbucket.rokomari.io/ProductNew20190903/260X372/8pcs_Floating_Duck_Bath_Toys_with_Squeez-Non_Brand-e1b5c-411119.png",
-        "subCategory": "Dolls & Accessories"
+        "subCategory": "Dolls & Accessories",
+        "fullDescription": "A luxury dollhouse featuring multiple rooms, furniture, and accessories to inspire imaginative play with Barbie and friends. This expansive dreamhouse comes with realistic details, working elevators, and interactive features that bring storytelling to life. The multi-story structure includes a bedroom, kitchen, bathroom, living room, and outdoor pool area, each furnished with detailed accessories. Children can create endless scenarios and storylines as they move Barbie through her dream home, hosting parties, cooking meals, or relaxing by the pool. The house features modern design elements, colorful decor, and transforming spaces that add to the play experience. Perfect for children who love role-playing and creating their own narratives, this dollhouse encourages social skills, creativity, and imaginative storytelling. Easy to assemble and sturdy enough for years of playtime adventures with friends and family."
     },
     {
         "toyId": 3,
@@ -33,19 +35,21 @@
         "availableQuantity": 50,
         "description": "An action-packed Hot Wheels racing track with loops, jumps, and boosters for thrilling car races at home.",
         "pictureURL": "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Baby_Plastic_Soothing_Rattle_Toy_for_New-Non_Brand-c6fbb-453120.png",
-        "subCategory": "Vehicles"
+        "subCategory": "Vehicles",
+        "fullDescription": "An action-packed Hot Wheels racing track with loops, jumps, and boosters for thrilling car races at home. This mega track set features gravity-defying stunts and high-speed racing action that will keep kids entertained for hours. The set includes multiple track pieces that can be configured in various layouts, allowing children to design their own custom race courses. Features include a motorized booster for extra speed, a vertical loop-the-loop, a jump ramp for aerial stunts, and a crash zone for dramatic finishes. Compatible with all standard Hot Wheels cars, it encourages hand-eye coordination, competitive play, and understanding of basic physics concepts like momentum and gravity. The bright orange track pieces are easy to connect and disconnect, making setup and storage simple. Perfect for solo racing challenges or exciting competitions with friends, this track set delivers non-stop action and excitement for young racing enthusiasts."
     },
     {
         "toyId": 4,
-        "toyName": "Rubik’s Cube 3x3",
+        "toyName": "Rubik's Cube 3x3",
         "sellerName": "Puzzle Planet",
         "sellerEmail": "support@puzzleplanet.com",
         "price": 14.99,
         "rating": 4.5,
         "availableQuantity": 150,
-        "description": "A classic 3x3 Rubik’s Cube puzzle that challenges kids and adults to improve their memory, focus, and problem-solving skills.",
+        "description": "A classic 3x3 Rubik's Cube puzzle that challenges kids and adults to improve their memory, focus, and problem-solving skills.",
         "pictureURL": "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Rolls_Royce_Big_Metal_Toy_Car_Fully_Meta-Non_Brand-85978-453446.png",
-        "subCategory": "Puzzles"
+        "subCategory": "Puzzles",
+        "fullDescription": "A classic 3x3 Rubik's Cube puzzle that challenges kids and adults to improve their memory, focus, and problem-solving skills. This iconic brain teaser has captivated millions worldwide with its colorful rotating faces and countless possible combinations. The cube features a smooth turning mechanism that allows for quick and precise movements, making it suitable for both beginners learning their first algorithms and experienced solvers attempting speed records. Each face displays vibrant, long-lasting colors that won't fade or peel with regular use. The puzzle helps develop spatial reasoning, pattern recognition, and logical thinking while providing a satisfying sense of accomplishment when solved. Compact and portable, it's perfect for entertainment during travel, waiting rooms, or quiet time at home. Durable construction ensures this timeless puzzle will withstand thousands of twists and turns, providing years of challenging fun for puzzle enthusiasts of all ages and skill levels."
     },
     {
         "toyId": 5,
@@ -57,7 +61,8 @@
         "availableQuantity": 30,
         "description": "A powerful RC monster truck with large tires and shock absorbers, perfect for off-road fun and outdoor adventures.",
         "pictureURL": "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Rolls_Royce_Big_Metal_Toy_Car_Fully_Meta-Non_Brand-4f70b-453445.png",
-        "subCategory": "Remote Control Toys"
+        "subCategory": "Remote Control Toys",
+        "fullDescription": "A powerful RC monster truck with large tires and shock absorbers, perfect for off-road fun and outdoor adventures. This rugged remote-controlled vehicle can tackle rough terrain, climb obstacles, and perform impressive stunts with ease. The oversized rubber tires provide excellent traction on grass, dirt, gravel, and pavement, while the advanced suspension system absorbs impacts from jumps and crashes. Features an ergonomic remote control with responsive steering and speed controls that work up to 100 feet away, giving kids plenty of range for exciting races and adventures. The truck's durable chassis can withstand repeated crashes and rollovers, making it perfect for aggressive play. Rechargeable battery provides up to 30 minutes of continuous runtime, and the included USB charging cable makes recharging quick and convenient. The bold design features realistic details, working headlights, and a rugged appearance that appeals to young monster truck fans. Perfect for outdoor play, this RC truck encourages active play, develops hand-eye coordination, and provides hours of thrilling entertainment."
     },
     {
         "toyId": 6,
@@ -69,7 +74,8 @@
         "availableQuantity": 85,
         "description": "A colorful Play-Doh set that allows kids to shape, mold, and create imaginative art with a variety of tools and colors.",
         "pictureURL": "/assets/zeep.png",
-        "subCategory": "Arts & Crafts"
+        "subCategory": "Arts & Crafts",
+        "fullDescription": "A colorful Play-Doh set that allows kids to shape, mold, and create imaginative art with a variety of tools and colors. This comprehensive set includes multiple cans of non-toxic modeling compound in vibrant colors including red, blue, yellow, green, and purple. The Fun Factory includes an extruder machine that creates fun shapes like stars, ribbons, and strings of Play-Doh, plus rolling pins, shape cutters, and sculpting tools. Children can create everything from pretend food and animals to abstract sculptures and decorative designs. The soft, pliable texture is perfect for small hands and helps develop fine motor skills, hand strength, and creativity. Play-Doh's unique formula is safe, washable, and can be reused countless times when stored properly in the included containers. This set encourages open-ended creative play, color mixing experimentation, and sensory exploration. Perfect for solo artistic expression or group craft activities, it provides endless opportunities for imagination and artistic development in young creators."
     },
     {
         "toyId": 7,
@@ -81,7 +87,8 @@
         "availableQuantity": 120,
         "description": "A soft and cuddly teddy bear made from plush materials, perfect for hugging, bedtime, and comforting kids of all ages.",
         "pictureURL": "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Ear_Plugs_for_Swimming_1pcs-Non_Brand-b4fb9-413004.png",
-        "subCategory": "Soft Toys"
+        "subCategory": "Soft Toys",
+        "fullDescription": "A soft and cuddly teddy bear made from plush materials, perfect for hugging, bedtime, and comforting kids of all ages. This adorable companion features ultra-soft, hypoallergenic fur that's gentle on sensitive skin and perfect for snuggling. The teddy bear stands approximately 15 inches tall with a friendly, smiling face featuring embroidered eyes and nose for safety. Filled with premium polyester stuffing, it's squeezably soft yet maintains its shape through countless hugs. The bear's classic design includes jointed arms and legs for poseable fun and a sweet expression that makes it an instant friend. Machine washable for easy cleaning, this teddy bear is built to withstand years of love and adventures. Perfect as a first stuffed animal, a comfort object for bedtime, or a loyal companion during playtime and travels. Made with high-quality, child-safe materials that meet all safety standards, this teddy bear is designed to become a cherished friend and treasured keepsake that children will love for years to come."
     },
     {
         "toyId": 8,
@@ -93,7 +100,8 @@
         "availableQuantity": 60,
         "description": "A high-performance Nerf blaster with foam darts, perfect for safe indoor and outdoor battles among kids.",
         "pictureURL": "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Small_Birds_Puzzle_4pcs_set-Hearts_Bangladesh-6c217-326284.png",
-        "subCategory": "Action Toys"
+        "subCategory": "Action Toys",
+        "fullDescription": "A high-performance Nerf blaster with foam darts, perfect for safe indoor and outdoor battles among kids. This elite blaster offers impressive firing range up to 90 feet, quick reload capability, and accurate shots for exciting competitive play. The blaster features a tactical rail for customization, a jam-clearing mechanism, and an ergonomic grip designed for comfortable extended play sessions. Includes 12 official Nerf Elite foam darts that are specifically designed for maximum distance and accuracy while remaining safe for children. The slam-fire feature allows rapid-fire action for intense battles, while the precision barrel ensures straight shooting. Built with durable construction that can handle active play, this blaster is perfect for backyard wars, indoor target practice, or organized Nerf competitions with friends. Lightweight design makes it easy for kids to carry and aim, promoting active play and outdoor exercise. The bright blue and orange colors give it an authentic look that young warriors will love, making this Nerf blaster an essential addition to any action toy collection."
     },
     {
         "toyId": 9,
@@ -105,7 +113,8 @@
         "availableQuantity": 70,
         "description": "A beautifully crafted wooden train set with magnetic connectors and colorful tracks for imaginative, eco-friendly play.",
         "pictureURL": "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Seven_Spotted_Ladybug_Baby_Fitness_Educa-Non_Brand-3e227-438226.png",
-        "subCategory": "Wooden Toys"
+        "subCategory": "Wooden Toys",
+        "fullDescription": "A beautifully crafted wooden train set with magnetic connectors and colorful tracks for imaginative, eco-friendly play. This sustainable toy is made from high-quality, responsibly sourced hardwood with smooth finishes and vibrant, non-toxic water-based paints. The set includes a locomotive, passenger cars, cargo cars, curved and straight track pieces, a bridge, a station, and miniature trees and figures to create a complete railway world. The strong magnetic connectors make it easy for little hands to assemble and disassemble trains while encouraging fine motor development. Children can design their own track layouts, create stories about passengers and cargo, and explore cause-and-effect relationships as they push trains along the tracks. Compatible with most major wooden railway systems for expanded play possibilities. The natural wood texture provides sensory stimulation, and the toy's durability means it can be passed down through generations. This environmentally conscious toy teaches children about sustainability while providing open-ended play that encourages creativity, problem-solving, storytelling, and spatial reasoning skills in an screen-free, wholesome play experience."
     },
     {
         "toyId": 10,
@@ -117,7 +126,8 @@
         "availableQuantity": 65,
         "description": "An interactive baby gym with colorful toys, music, and lights that encourage sensory development and movement.",
         "pictureURL": "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Microscope_for_Kids_Beginners_Scientific-Non_Brand-00903-283543.png",
-        "subCategory": "Baby Toys"
+        "subCategory": "Baby Toys",
+        "fullDescription": "An interactive baby gym with colorful toys, music, and lights that encourage sensory development and movement. This engaging play mat features a soft, cushioned surface with bright patterns and colors that stimulate visual development. The overhead arch holds five detachable toys including a mirror for self-discovery, rattles for auditory stimulation, and textured toys for tactile exploration. Battery-powered music and light modes provide variety with up to 20 minutes of continuous play, featuring classical melodies and nature sounds. The gym grows with baby through multiple developmental stages: newborns enjoy the overhead toys during back time, older babies reach and grasp to build coordination, and sitting babies can explore the toys independently. Machine-washable mat makes cleanup easy for busy parents. Designed by child development experts, every feature supports specific milestones including reaching, grasping, tummy time, and cause-and-effect learning. The portable design folds flat for easy storage or travel, making it perfect for use at home or on-the-go. A safe, entertaining, and educational space for infant development from birth through twelve months."
     },
     {
         "toyId": 11,
@@ -129,7 +139,8 @@
         "availableQuantity": 200,
         "description": "A fast-paced family card game that brings everyone together for competitive and fun-filled game nights.",
         "pictureURL": "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Sports_And_Fitness_Premium_Quality_Magne-Sports_And_Fitness-363bf-426767.png",
-        "subCategory": "Board & Card Games"
+        "subCategory": "Board & Card Games",
+        "fullDescription": "A fast-paced family card game that brings everyone together for competitive and fun-filled game nights. This classic card game is easy to learn but exciting to master, with simple rules that make it perfect for players aged 7 and up. The deck includes 108 cards featuring four colors (red, yellow, green, and blue) plus special action cards like Skip, Reverse, Draw Two, Wild, and the powerful Wild Draw Four. Each game typically lasts 15-30 minutes, making it perfect for quick entertainment or extended game sessions. Players must match cards by color or number while using strategic action cards to thwart opponents and be the first to empty their hand. The famous rule of shouting 'UNO!' when down to one card adds excitement and keeps everyone engaged and attentive. This game teaches color and number recognition, strategic thinking, and social skills while creating opportunities for family bonding and friendly competition. Compact and portable, UNO is perfect for parties, family gatherings, vacations, or anywhere people want to share laughs and create memories together. A timeless game that has entertained millions of families worldwide for generations."
     },
     {
         "toyId": 12,
@@ -141,6 +152,7 @@
         "availableQuantity": 55,
         "description": "A detailed Spider-Man action figure with flexible joints and web accessories for fans of the Marvel universe.",
         "pictureURL": "https://rokbucket.rokomari.io/ProductNew20190903/260X372/Creative_Gyro_Gun_Ufo_Gun_Gyro_Ground_Gu-Non_Brand-1c997-468902.png",
-        "subCategory": "Action Figures"
+        "subCategory": "Action Figures",
+        "fullDescription": "A detailed Spider-Man action figure with flexible joints and web accessories for fans of the Marvel universe. This highly articulated 6-inch figure features over 20 points of articulation, allowing for dynamic action poses and authentic web-slinging stances. The figure showcases incredible attention to detail with accurate costume design including the iconic red and blue suit, web pattern texturing, and Spider-Man's distinctive mask. Includes interchangeable hands for different poses and grips, plus web accessories that can attach to the figure's wrists for web-shooting action scenes. Made from durable, high-quality plastic that can withstand active play while maintaining its appearance and functionality. Perfect for recreating favorite scenes from Spider-Man movies, comics, and animated series, or for creating original adventures and battles against villains. The figure is compatible with other Marvel action figures and playsets for expanded storytelling possibilities. Whether displayed on a shelf as part of a collection or used in imaginative play scenarios, this Spider-Man figure brings the excitement of the Marvel universe to life and inspires heroic adventures for fans of all ages."
     }
 ]

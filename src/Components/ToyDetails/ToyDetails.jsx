@@ -66,7 +66,7 @@ const ToyDetails = () => {
                 <hr className="app-details-below-hr" />
                 <div className="app-details-description">
                     <p className="description-heading">Description</p>
-                    <p className="description-text">{toyToTry.description}
+                    <p className="description-text">{toyToTry.fullDescription}
                     </p>
                 </div>
             </section>
