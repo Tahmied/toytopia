@@ -7,7 +7,7 @@ const Footer = () => {
             <footer className="footer">
                 <div className="footer-container">
                     <div className="footer-section">
-                        <div onClick={() => navigate('/')} className='logo'>
+                        <div onClick={() => navigate('/')} className='footer-logo '>
                             <img src="/assets/logo.svg" alt="" className="logo-icon" />
                         </div>
                         <h3>About Us</h3>
