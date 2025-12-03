@@ -40,6 +40,7 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 24px;
+    width: 90%;
 }
 
 .logo {
@@ -893,10 +894,9 @@ body.no-scroll {
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
-    width: 90%;
-    max-width: 1100px;
+    width: 80%;
+    max-width: 1300px;
     margin: 2rem auto;
-    padding: 2rem;
 }
 
 .slide-two-left {
@@ -953,6 +953,7 @@ body.no-scroll {
     line-height: 1.2;
     color: #222;
     margin: 0;
+    width: 80%;
 }
 
 .slide-two-states {
@@ -1187,9 +1188,9 @@ body.no-scroll {
 .toys-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
     margin: 2rem auto;
-    width: 80%;
+    width: 90%;
 }
 
 .popular-view-more {
@@ -1555,7 +1556,7 @@ body.no-scroll {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 80%;
     gap: 2rem;
 }
 
@@ -1566,16 +1567,18 @@ body.no-scroll {
     flex-direction: column;
     gap: 1rem;
     flex: 1;
+    max-width: 400px;
 }
 
 .creative-right {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    align-items: center;
 }
 
 .creative-right-img {
-    max-width: 100%;
+    max-width: 500px;
     height: auto;
 }
 
@@ -1671,11 +1674,12 @@ body.no-scroll {
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 80%;
 }
 
 .footer-section {
@@ -1789,6 +1793,16 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.right-f {
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    .right-f {
+        align-items: flex-start;
+    }
 }
 
 .logo {

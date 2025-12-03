@@ -20,7 +20,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="footer-section">
+                    <div className="footer-section right-f">
                         <h3>Quick Links</h3>
                         <ul>
                             <li><a href="#">Home</a></li>
@@ -31,7 +31,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="footer-section">
+                    <div className="footer-section right-f">
                         <h3>Customer Service</h3>
                         <ul>
                             <li><a href="#">Contact Us</a></li>
