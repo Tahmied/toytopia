@@ -1,0 +1,237 @@
+/* AboutPage.css */
+.aboutpage-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ffffff, #f3f4ff);
+}
+
+.aboutpage-hero-section {
+    background-color: #7680fe;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.aboutpage-hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aboutpage-hero-content p {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.aboutpage-main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.aboutpage-story-section {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.aboutpage-story-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+.aboutpage-story-section p {
+    font-size: 1.125rem;
+    color: #4a4a4a;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.aboutpage-features-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.aboutpage-feature-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.aboutpage-feature-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.aboutpage-feature-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #7680fe;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 25px;
+}
+
+.aboutpage-feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.aboutpage-feature-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.aboutpage-mission-section {
+    background-color: #7680fe;
+    color: white;
+    padding: 60px 40px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.aboutpage-mission-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.aboutpage-mission-section p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    opacity: 0.95;
+}
+
+.aboutpage-values-section {
+    margin-bottom: 80px;
+}
+
+.aboutpage-values-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.aboutpage-values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.aboutpage-value-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.aboutpage-value-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #7680fe;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.aboutpage-value-content h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.aboutpage-value-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.aboutpage-cta-section {
+    background: white;
+    padding: 60px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.aboutpage-cta-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.aboutpage-cta-section p {
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutpage-cta-button {
+    background-color: #7680fe;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.aboutpage-cta-button:hover {
+    background-color: #5a64e6;
+}
+
+@media (max-width: 768px) {
+    .aboutpage-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .aboutpage-hero-content p {
+        font-size: 1rem;
+    }
+
+    .aboutpage-story-section h2,
+    .aboutpage-mission-section h2,
+    .aboutpage-values-section h2 {
+        font-size: 2rem;
+    }
+
+    .aboutpage-features-section,
+    .aboutpage-values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutpage-main-content {
+        padding: 40px 15px;
+    }
+}
