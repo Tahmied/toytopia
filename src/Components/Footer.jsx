@@ -13,10 +13,10 @@ const Footer = () => {
                         <h3>About Us</h3>
                         <p>We provide the best toys for children of all ages, focusing on safety, education, and fun. Our mission is to bring joy to families everywhere.</p>
                         <div className="social-links">
-                            <a href="#"><i className="fab fa-facebook-f"></i></a>
-                            <a href="#"><i className="fab fa-twitter"></i></a>
-                            <a href="#"><i className="fab fa-instagram"></i></a>
-                            <a href="#"><i className="fab fa-pinterest"></i></a>
+                            <a href="https://www.facebook.com/tahmied.dev"><i className="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/tahmiedhossain"><i className="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/tahmied_hossain/"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.pinterest.com/tahmied22/"><i className="fab fa-pinterest"></i></a>
                         </div>
                     </div>
 
